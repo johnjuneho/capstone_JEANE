@@ -1,0 +1,48 @@
+.home {
+  flex-wrap: wrap;
+  gap: 257px 32px;
+  height: 976px;
+  padding: 35px 0px 0px 40px;
+  position: relative;
+  width: 1509px;
+}
+
+.home,
+.menu {
+  display: flex;
+}
+
+.home,
+.menu,
+.logo-container {
+  align-items: flex-start;
+}
+
+.logo-container,
+.logo-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.logo-container,
+.logo-button,
+.menu {
+  position: relative;
+}
+
+.logo-container {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo-button {
+  align-items: center;
+  gap: 42px;
+  justify-content: center;
+}
+
+.menu {
+  gap: 57px;
+  height: 778px;
+  width: 1412px;
+}
