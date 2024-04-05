@@ -1,18 +1,28 @@
 import React from 'react';
-import HomeButton from '../../HomeButton/HomeButton';
-import MenuCard from '../../MenuCard/MenuCard';
+import HomeButton from '../../cards/HomeButton/HomeButton';
+import MenuCard from '../../cards/MenuCard/MenuCard';
+import OverviewCard from '../../cards/OverviewCard/OverviewCard';
 import './style.css';
 
 export default function Home() {
   return (
-    <div className="home">
-      <div className="logo-container">
-        <div className="logo-button">
-          <HomeButton />
+    <div className="home-dashboard">
+      <div className="container">
+        <div className="container-2">
+          <div className="header">
+            <div className="logo">
+              <HomeButton />
+            </div>
+          </div>
         </div>
       </div>
-      <div className="menu">
-        <MenuCard />
+      <div className="content">
+        <div className="menu">
+          <MenuCard />
+        </div>
+        <div className="overview">
+          <OverviewCard />
+        </div>
       </div>
     </div>
   );

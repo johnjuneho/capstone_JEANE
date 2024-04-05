@@ -1,48 +1,96 @@
-.home {
-  flex-wrap: wrap;
-  gap: 257px 32px;
-  height: 976px;
-  padding: 35px 0px 0px 40px;
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.home-dashboard {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  width: 1509px;
+  gap: 2rem;
+  padding: 2.5rem 40rem 1rem 2.5rem;
 }
 
-.home,
-.menu {
+.container {
+  height: 65px;
+  position: relative;
+  width: 100%;
+}
+
+.container-2 {
+  height: 65px;
+}
+
+.header {
+  align-items: center;
+  display: inline-flex;
+  gap: 32px;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  align-items: flex-start;
+  display: flex;
+  gap: 57px;
+  position: relative;
+  margin-right: 57px;
+}
+
+.overview {
+  width: 950px;
+  height: 630px;
+  box-shadow: -8px 8px 0px #4e4e4e;
+  border-radius: 20px;
+  background-color: rgba(255, 252, 238, 1);
+  padding: 20px 20px 20px 20px;
+}
+
+.menu,
+.overview {
+  align-items: flex-start;
   display: flex;
 }
-
-.home,
-.menu,
-.logo-container {
-  align-items: flex-start;
+:root {
+  --base-font-size: 16px;
 }
 
-.logo-container,
-.logo-button {
+.container {
+  height: 4.0625rem;
+  position: relative;
+  width: 100%;
+}
+
+.container-2 {
+  height: 4.0625rem;
+}
+
+.header {
+  align-items: center;
   display: inline-flex;
-  flex: 0 0 auto;
-}
-
-.logo-container,
-.logo-button,
-.menu {
+  gap: 2rem;
+  justify-content: center;
   position: relative;
 }
 
-.logo-container {
-  flex-direction: column;
-  gap: 10px;
+.content {
+  align-items: flex-start;
+  display: flex;
+  gap: 3.5625rem;
+  position: relative;
+  margin-right: 3.5625rem;
 }
 
-.logo-button {
-  align-items: center;
-  gap: 42px;
-  justify-content: center;
+.overview {
+  width: 59.375rem;
+  height: 39.375rem;
+  box-shadow: -0.5rem 0.5rem 0px #4e4e4e;
+  border-radius: 1.25rem;
+  background-color: rgba(255, 252, 238, 1);
+  padding: 1.25rem;
 }
 
-.menu {
-  gap: 57px;
-  height: 778px;
-  width: 1412px;
+.menu,
+.overview {
+  align-items: flex-start;
+  display: flex;
 }

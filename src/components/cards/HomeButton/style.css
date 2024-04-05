@@ -3,8 +3,9 @@
 div {
   display: flex;
   align-items: center;
-  gap: 42px;
+  gap: 2rem;
   position: relative;
+  height: 4.75rem;
 }
 
 button {
@@ -16,7 +17,7 @@ button {
 p {
   text-align: center;
   color: #3b2b23;
-  font-size: 55px;
+  font-size: 2.8125rem;
   font-family: 'Germania One', Arial, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -24,7 +25,7 @@ p {
 }
 
 img {
-  width: 63.02px;
-  height: 76px;
+  width: 3.375rem;
+  height: 4.0625rem;
   position: relative;
 }

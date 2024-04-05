@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { PaperPage } from '../icons/PaperPage';
-import { File } from '../icons/File';
-import { GameControl } from '../icons/GameControl';
-import { SignOut } from '../icons/SignOut';
+import { PaperPage } from '../../icons/PaperPage';
+import { File } from '../../icons/File';
+import { GameControl } from '../../icons/GameControl';
+import { SignOut } from '../../icons/SignOut';
 import './style.css';
 
 export default function HomeButton() {
@@ -13,7 +13,7 @@ export default function HomeButton() {
         <p>MENU</p>
         <div className="nav">
           <Link to="/homeu47dashboard">
-            <div>
+            <div class="link-content">
               <img
                 className="icon"
                 alt="window outline"
@@ -25,7 +25,7 @@ export default function HomeButton() {
             </div>
           </Link>
           <Link to="/homeu47dashboard">
-            <div>
+            <div class="link-content">
               <div>
                 <File className="icon" />
                 <div>
@@ -35,7 +35,7 @@ export default function HomeButton() {
             </div>
           </Link>
           <Link to="/homeu47dashboard">
-            <div>
+            <div class="link-content">
               <div>
                 <div>
                   <PaperPage className="icon" />
@@ -47,7 +47,7 @@ export default function HomeButton() {
             </div>
           </Link>
           <Link to="/homeu47dashboard">
-            <div>
+            <div class="link-content">
               <div>
                 <GameControl />
                 <div>
@@ -57,7 +57,7 @@ export default function HomeButton() {
             </div>
           </Link>
           <Link to="/homeu47dashboard">
-            <div>
+            <div class="link-content">
               <div>
                 <img
                   className="icon"
