@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.overview-card {
+  align-items: flex-start;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  overflow: hidden;
+  padding: 3.6875rem 3.5625rem;
+  position: relative;
+  width: 56.25rem;
+  height: 31.875rem;
+  background-color: yellow;
+}
+
+.outline {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3.5625rem;
+  justify-content: center;
+  padding: 0px 0.5rem;
+  position: relative;
+  width: 56.25rem;
+  height: 37.5rem;
+}
+
+.profile {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 3.5625rem;
+  position: relative;
+}
+
+.group {
+  background-color: #89722a;
+  border-radius: 22.5rem;
+  height: 12.0625rem;
+  position: relative;
+  width: 12.0625rem;
+}
+
+.overlap-group {
+  background-color: #89722a;
+  border-radius: 22.5rem;
+  height: 12.0625rem;
+  position: relative;
+}
+
+.profile-outline {
+  background-color: #89722a;
+  border-radius: 22.5rem;
+  height: 12.0625rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 12.0625rem;
+}
+
+.img {
+  height: 10.5625rem;
+  left: 0.75rem;
+  object-fit: cover;
+  position: absolute;
+  top: 0.75rem;
+  width: 10.5625rem;
+}
+
+.name {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 0.8125rem;
+  position: relative;
+}
+
+.name-label {
+  color: #121212;
+  font-family: 'Averia Sans Libre', Helvetica;
+  font-size: 1.875rem;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 100%;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.grade-label {
+  color: rgba(142, 142, 142, 1);
+  font-family: 'Averia Sans Libre', Helvetica;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.progress {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  position: relative;
+}
+
+.progress-overview {
+  color: #3b2b23;
+  font-family: 'Averia Sans Libre', Helvetica;
+  font-weight: 700;
+  font-size: 1.875rem;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -5px;
+  position: relative;
+  width: fit-content;
+}
