@@ -2,36 +2,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 .overview-card {
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   border-radius: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
   overflow: hidden;
-  padding: 3.6875rem 3.5625rem;
+  padding: 1.8rem 1.8rem;
   position: relative;
   width: 56.25rem;
-  height: 31.875rem;
-  background-color: yellow;
+  height: 36rem;
 }
 
 .outline {
   align-items: center;
+  justify-content: center;
   display: inline-flex;
   flex-direction: column;
   gap: 3.5625rem;
-  justify-content: center;
-  padding: 0px 0.5rem;
   position: relative;
-  width: 56.25rem;
-  height: 37.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.outline-frame {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  gap: 3.5625rem;
+  position: relative;
+  width: 100%;
+}
+
+.progress {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.progress p {
+  margin: 0px;
 }
 
 .profile {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
-  gap: 3.5625rem;
   position: relative;
 }
 
@@ -72,9 +93,8 @@
 .name {
   align-items: flex-start;
   display: inline-flex;
-  flex: 0 0 auto;
   flex-direction: column;
-  gap: 0.8125rem;
+  gap: 0rem;
   position: relative;
 }
 
@@ -82,7 +102,9 @@
   color: #121212;
   font-family: 'Averia Sans Libre', Helvetica;
   font-size: 1.875rem;
+  height: 2rem;
   font-weight: 400;
+  margin-bottom: 0.8rem;
   letter-spacing: -0.4px;
   line-height: 100%;
   margin-top: -1px;
@@ -94,7 +116,9 @@
 .grade-label {
   color: rgba(142, 142, 142, 1);
   font-family: 'Averia Sans Libre', Helvetica;
+  height: 1.5rem;
   font-size: 1.25rem;
+  margin: 0;
   font-weight: 700;
   letter-spacing: 0px;
   line-height: normal;
@@ -108,6 +132,7 @@
   flex-direction: column;
   gap: 1.375rem;
   position: relative;
+  height: ;
 }
 
 .progress-overview {
@@ -117,7 +142,7 @@
   font-size: 1.875rem;
   letter-spacing: 0;
   line-height: normal;
-  margin-top: -5px;
+  margin-top: 1px;
   position: relative;
   width: fit-content;
 }
