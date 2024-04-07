@@ -11,41 +11,41 @@ export default function ProgressOverview() {
           <div className="text">Course name</div>
           <div className="prog-col-name">
             <div className="start-label">
-              <div className="text">Start</div>
+              <p className="text">Start</p>
             </div>
             <div className="rate-prog-label">
               <div className="rate-prog">
-                <div className="text">Rate</div>
-                <div className="text-2">Progress</div>
+                <p className="text">Rate</p>
+                <p className="text-2">Progress</p>
               </div>
             </div>
           </div>
         </div>
         <div className="row-container">
           <div className="row">
-            <div className="text-3">Prompt Engineering</div>
-            <div className="text-3">Feb 12</div>
+            <p className="text-3">Lesson 1</p>
+            <p className="text-3">Feb 12</p>
             <div className="star-container">
               <img className="star" alt="Star" src={star} />
-              <div className="text">4.8</div>
+              <p className="text">4.8</p>
             </div>
             <ProgressBar />
           </div>
           <div className="row">
-            <div className="text-3">Prompt Engineering</div>
-            <div className="text-3">Feb 12</div>
+            <p className="text-3">Lesson 2</p>
+            <p className="text-3">Feb 12</p>
             <div className="star-container">
               <img className="star" alt="Star" src={star} />
-              <div className="text">4.7</div>
+              <p className="text">4.7</p>
             </div>
             <ProgressBar />
           </div>
           <div className="row">
-            <div className="text-3">Prompt Engineering</div>
-            <div className="text-3">Feb 12</div>
+            <p className="text-3">Lesson 3</p>
+            <p className="text-3">Feb 12</p>
             <div className="star-container">
               <img className="star" alt="Star" src={star} />
-              <div className="text">5.0</div>
+              <p className="text">5.0</p>
             </div>
             <ProgressBar />
           </div>
