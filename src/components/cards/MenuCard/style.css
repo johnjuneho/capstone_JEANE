@@ -1,28 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+.outer-frame {
+  height: 41.875rem;
+  width: 22.875rem;
+}
+
+.inner-frame {
+  position: relative;
+  border-radius: 0.9375rem;
+  height: 41.875rem;
+}
+
 .menu-card {
   height: 41.875rem;
-  justify-content: center;
   overflow: hidden;
-  position: relative;
-  width: 22.875rem;
+  position: absolute;
+  width: 20rem;
   align-items: center;
   background-color: #fffcee;
   border-radius: 0.9375rem;
   box-shadow: -0.5rem 0.5rem 0px #4e4e4e;
-  display: inline-flex;
+  display: flex;
+  top: 0;
   flex-direction: column;
-  gap: 1.25rem;
 }
 
-.outline {
+.outer-frame .outline {
   align-items: flex-start;
+  justify-content: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 5.375rem;
-  justify-content: center;
+  position: relative;
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
 }
 
 .title {
@@ -32,7 +46,7 @@
   font-weight: 400;
   letter-spacing: 1.5px;
   margin-top: -1px;
-  position: static;
+  position: relative;
   text-align: center;
   white-space: nowrap;
   width: fit-content;
@@ -40,76 +54,77 @@
 
 .nav {
   align-items: flex-start;
-  display: flex;
+  display: inline-flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 2.875rem;
   position: relative;
-  width: 15.375rem;
+  gap: 1rem;
 }
 
-/* not working */
-Link {
-  align-self: stretch;
-  display: block;
+.section {
   height: 2.5rem;
   position: relative;
-  width: 100%;
-  text-decoration: none;
+  width: 310px;
 }
 
-Link:hover {
-  font-weight: 700;
-}
-
-/*
-.link-content {
-  align-items: center;
-  display: flex;
-  position: relative;
-  width: 15.375rem;
-}
-*/
-
-.icon {
+.file-instance {
   height: 2.5rem;
   position: relative;
   width: 2.5rem;
 }
 
-.label {
+.text-label p,
+.log-out-text p {
   color: #3b2b23;
   font-family: 'Averia Sans Libre', sans-serif;
-  font-size: 1.875rem;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 700;
   letter-spacing: -0.41px;
-  line-height: 1.375rem;
+  line-height: 22px;
   margin-top: -1px;
   position: relative;
   white-space: nowrap;
   width: fit-content;
 }
 
-.sign-out {
-  height: 2.1875rem;
-  position: relative;
-  width: 9.453125rem;
+.row .log-out-text p {
+  font-size: 25px;
 }
 
-.sign-out-icon {
-  height: 1.828125rem;
+/*
+.log-out {
+  height: 35px;
   position: relative;
-  width: 1.828125rem;
+  width: 151.26px;
 }
 
-.sign-out-label {
-  color: #3b2b23;
-  font-family: 'Averia Sans Libre', Helvetica;
-  font-size: 1.75rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
+.frame-wrapper {
+  align-self: stretch;
+  height: 2.5rem;
   position: relative;
-  width: 7rem;
+  width: 100%;
 }
+
+.text-container {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  position: relative;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 310px;
+}
+.group-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 310px;
+}
+*/

@@ -45,11 +45,6 @@
   padding: 3.6rem 3.6rem 3.6rem 3.6rem;
 }
 
-.menu,
-.overview {
-  align-items: flex-start;
-  display: flex;
-}
 :root {
   --base-font-size: 16px;
 }
@@ -75,7 +70,6 @@
 .content {
   align-items: flex-start;
   display: flex;
-  gap: 3.5625rem;
   position: relative;
   margin-right: 3.5625rem;
 }
@@ -93,4 +87,9 @@
 .overview {
   align-items: flex-start;
   display: flex;
+}
+
+.menu {
+  height: 0rem;
+  margin: 0rem;
 }
