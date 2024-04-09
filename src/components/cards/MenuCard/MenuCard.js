@@ -16,7 +16,7 @@ export default function MenuCard() {
               <p>MENU</p>
             </div>
             <section class="nav">
-              <div class="row">
+              <div class="nav-row">
                 <Dashboard class="icon" />
                 <div class="text-container">
                   <div class="text-label">
@@ -24,7 +24,7 @@ export default function MenuCard() {
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="nav-row">
                 <Star class="icon" />
                 <div class="text-container">
                   <div class="text-label">
@@ -32,7 +32,7 @@ export default function MenuCard() {
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="nav-row">
                 <Lesson class="icon" />
                 <div class="text-container">
                   <div class="text-label">
@@ -40,7 +40,7 @@ export default function MenuCard() {
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="nav-row">
                 <Lesson class="icon" />
                 <div class="text-container">
                   <div class="text-label">
@@ -48,7 +48,7 @@ export default function MenuCard() {
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="nav-row">
                 <Lesson class="icon" />
                 <div class="text-container">
                   <div class="text-label">
@@ -56,21 +56,23 @@ export default function MenuCard() {
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <SignOut class="icon" />
+              <div class="nav-row">
+                <Settings class="icon" />
                 <div class="text-container">
                   <div class="text-label">
                     <p>Settings</p>
                   </div>
                 </div>
               </div>
-            </section>
-            <div class="row">
-              <SignOut class="sign-out-icon" />
-              <div class="log-out-text">
-                <p>Log out</p>
+              <div class="nav-row log-out">
+                <SignOut class="sign-out-icon" />
+                <div class="text-container">
+                  <div class="text-label">
+                    <p>Log Out</p>
+                  </div>
+                </div>
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </div>
