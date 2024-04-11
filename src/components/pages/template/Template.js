@@ -19,7 +19,7 @@ export default function Home() {
         <div className="menu">
           <MenuCard />
         </div>
-        <div className="overview">Put large card content here</div>
+        <div className="content-card">Put large card content here</div>
       </div>
     </div>
   );
