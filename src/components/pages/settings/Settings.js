@@ -3,7 +3,7 @@ import HomeButton from '../../cards/HomeButton/HomeButton';
 import MenuCard from '../../cards/MenuCard/MenuCard';
 import './style.css';
 
-export default function Home() {
+export default function Settings() {
   return (
     <div className="home-dashboard">
       <div className="container">
@@ -19,7 +19,7 @@ export default function Home() {
         <div className="menu">
           <MenuCard />
         </div>
-        <div className="content-card">Put large card content here</div>
+        <div className="content-card"></div>
       </div>
     </div>
   );
