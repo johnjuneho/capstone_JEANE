@@ -9,7 +9,7 @@ export default function HomeButton() {
       <button>
         <div>
           <img src={logo} alt="dragon outline" />
-          <p>How to Train Your ChatBot</p>
+          <p id="logo-title">How to Train Your ChatBot</p>
         </div>
       </button>
     </Link>

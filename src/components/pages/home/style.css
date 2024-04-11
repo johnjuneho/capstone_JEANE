@@ -33,25 +33,18 @@
   display: flex;
   gap: 57px;
   position: relative;
-  margin-right: 57px;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
 }
 
-.overview {
-  width: 950px;
-  height: 630px;
+.content-card {
+  width: 73rem;
+  height: 43rem;
   box-shadow: -8px 8px 0px #4e4e4e;
   border-radius: 20px;
   background-color: rgba(255, 252, 238, 1);
   padding: 3.6rem 3.6rem 3.6rem 3.6rem;
-}
-
-.menu,
-.overview {
-  align-items: flex-start;
-  display: flex;
-}
-:root {
-  --base-font-size: 16px;
 }
 
 .container {
@@ -75,22 +68,17 @@
 .content {
   align-items: flex-start;
   display: flex;
-  gap: 3.5625rem;
   position: relative;
   margin-right: 3.5625rem;
-}
-
-.overview {
-  width: 59.375rem;
-  height: 39.375rem;
-  box-shadow: -0.5rem 0.5rem 0px #4e4e4e;
-  border-radius: 1.25rem;
-  background-color: rgba(255, 252, 238, 1);
-  padding: 1.25rem;
 }
 
 .menu,
 .overview {
   align-items: flex-start;
   display: flex;
+}
+
+.menu {
+  height: 0rem;
+  margin: 0rem;
 }

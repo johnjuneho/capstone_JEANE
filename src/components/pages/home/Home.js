@@ -20,7 +20,7 @@ export default function Home() {
         <div className="menu">
           <MenuCard />
         </div>
-        <div className="overview">
+        <div className="content-card">
           <OverviewCard />
         </div>
       </div>

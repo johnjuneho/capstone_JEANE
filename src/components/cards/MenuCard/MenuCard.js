@@ -1,84 +1,75 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { PaperPage } from '../../icons/PaperPage';
-import { File } from '../../icons/File';
-import { GameControl } from '../../icons/GameControl';
-import { SignOut } from '../../icons/SignOut';
+import { Settings } from '../../icons/Settings.js';
+import { SettingsFill } from '../../icons/Settings-Fill.js';
+import { Lesson } from '../../icons/Lesson.js';
+import { LessonFill } from '../../icons/Lesson-Fill.js';
+import { Star } from '../../icons/Star.js';
+import { StarFill } from '../../icons/Star-Fill.js';
+import { Dashboard } from '../../icons/Dashboard.js';
+import { DashboardFill } from '../../icons/Dashboard-Fill.js';
 import './style.css';
 
-export default function HomeButton() {
+export default function MenuCard() {
   return (
-    <div className="menu-card">
-      <div className="outline">
-        <p>MENU</p>
-        <div className="nav">
-          <Link to="/homeu47dashboard">
-            <div class="link-content">
-              <img
-                className="icon"
-                alt="window outline"
-                src="https://c.animaapp.com/0v6OgNX0/img/vuesax-bold-element-3@2x.png"
-              />
-              <div>
-                <p className="label">Overview</p>
-              </div>
+    <div class="outer-frame">
+      <div class="inner-frame">
+        <div class="menu-card">
+          <div class="outline">
+            <div class="nav-title">
+              <p>MENU</p>
             </div>
-          </Link>
-          <Link to="/homeu47dashboard">
-            <div class="link-content">
-              <div>
-                <File className="icon" />
-                <div>
-                  <p className="label">Lessons</p>
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link to="/homeu47dashboard">
-            <div class="link-content">
-              <div>
-                <div>
-                  <PaperPage className="icon" />
-                  <div>
-                    <p className="label">Quizzes</p>
+            <section class="nav">
+              <div class="nav-row">
+                <Dashboard />
+                <div class="text-container">
+                  <div class="text-label">
+                    <p>Overview</p>
                   </div>
                 </div>
               </div>
-            </div>
-          </Link>
-          <Link to="/homeu47dashboard">
-            <div class="link-content">
-              <div>
-                <GameControl />
-                <div>
-                  <p className="label">Games</p>
+              <div class="nav-row">
+                <Star />
+                <div class="text-container">
+                  <div class="text-label">
+                    <p>Introduction</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Link>
-          <Link to="/homeu47dashboard">
-            <div class="link-content">
-              <div>
-                <img
-                  className="icon"
-                  alt="Setting line"
-                  src="https://c.animaapp.com/0v6OgNX0/img/setting-line.svg"
-                />
-                <div>
-                  <p className="label">Settings</p>
+              <div class="nav-row">
+                <Lesson />
+                <div class="text-container">
+                  <div class="text-label">
+                    <p>Lesson 1</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        </div>
-        <Link to="/homeu47dashboard">
-          <div className="sign-out">
-            <div>
-              <SignOut className="sign-out-icon" />
-              <p className="sign-out-label">Log out</p>
-            </div>
+              <div class="nav-row">
+                <Lesson />
+                <div class="text-container">
+                  <div class="text-label">
+                    <p>Lesson 2</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-row">
+                <Lesson />
+                <div class="text-container">
+                  <div class="text-label">
+                    <p>Lesson 3</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-row">
+                <Settings />
+                <div class="text-container">
+                  <div class="text-label">
+                    <p>Settings</p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );

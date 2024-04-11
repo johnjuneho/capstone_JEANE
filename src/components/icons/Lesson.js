@@ -1,9 +1,8 @@
 import React from 'react';
 
-export const File = ({ className }) => {
+export const Lesson = () => {
   return (
     <svg
-      className={`file ${className}`}
       fill="none"
       height="41"
       viewBox="0 0 41 41"
