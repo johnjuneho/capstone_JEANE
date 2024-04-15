@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Settings } from '../../icons/Settings.js';
 import { SettingsFill } from '../../icons/Settings-Fill.js';
 import { Lesson } from '../../icons/Lesson.js';
@@ -19,54 +20,55 @@ export default function MenuCard() {
               <p>MENU</p>
             </div>
             <section class="nav">
-              <div class="nav-row">
+              <Link path="" class="nav-row">
                 <Dashboard />
                 <div class="text-container">
                   <div class="text-label">
                     <p>Overview</p>
                   </div>
                 </div>
-              </div>
-              <div class="nav-row">
+              </Link>
+              `
+              <Link path="" class="nav-row">
                 <Star />
                 <div class="text-container">
                   <div class="text-label">
                     <p>Introduction</p>
                   </div>
                 </div>
-              </div>
-              <div class="nav-row">
+              </Link>
+              <Link path="/lesson-1" class="nav-row">
                 <Lesson />
                 <div class="text-container">
                   <div class="text-label">
                     <p>Lesson 1</p>
                   </div>
                 </div>
-              </div>
-              <div class="nav-row">
+              </Link>
+              <Link path="" class="nav-row">
                 <Lesson />
                 <div class="text-container">
                   <div class="text-label">
                     <p>Lesson 2</p>
                   </div>
                 </div>
-              </div>
-              <div class="nav-row">
+              </Link>
+              <Link path="" class="nav-row">
                 <Lesson />
                 <div class="text-container">
                   <div class="text-label">
                     <p>Lesson 3</p>
                   </div>
                 </div>
-              </div>
-              <div class="nav-row">
+              </Link>
+              <Link path="" class="nav-row">
                 <Settings />
                 <div class="text-container">
                   <div class="text-label">
                     <p>Settings</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             </section>
           </div>
         </div>
