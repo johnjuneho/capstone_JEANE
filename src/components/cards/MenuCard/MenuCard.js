@@ -29,7 +29,7 @@ export default function MenuCard({ pageName }) {
             </div>
             <section className="nav">
               {routes.map((route, index) => (
-                <NavLink key={index} to={`\${route.path}`} className="nav-row">
+                <NavLink key={index} to={route.path} className="nav-row">
                   {addIcon(route.className, pageName)}
                   <div className="text-container">
                     <div className="text-label">
