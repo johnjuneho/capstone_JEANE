@@ -1,78 +1,90 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import { Settings } from '../../icons/Settings.js';
 import { SettingsFill } from '../../icons/Settings-Fill.js';
 import { Lesson } from '../../icons/Lesson.js';
 import { LessonFill } from '../../icons/Lesson-Fill.js';
 import { Star } from '../../icons/Star.js';
 import { StarFill } from '../../icons/Star-Fill.js';
-import { Dashboard } from '../../icons/Dashboard.js';
-import { DashboardFill } from '../../icons/Dashboard-Fill.js';
+import { Overview } from '../../icons/Dashboard.js';
+import { OverviewFill } from '../../icons/Dashboard-Fill.js';
 import './style.css';
+import routes from '../../../routes.js';
 
-export default function MenuCard() {
+/**
+ * Menu card with navigation links.
+ *
+ * @param {string} pageName - The name of the current active page.
+ *
+ * @returns {JSX.Element} The MenuCard component.
+ */
+export default function MenuCard({ pageName }) {
   return (
-    <div class="outer-frame">
-      <div class="inner-frame">
-        <div class="menu-card">
-          <div class="outline">
-            <div class="nav-title">
+    <div className="outer-frame">
+      <div className="inner-frame">
+        <div className="menu-card">
+          <div className="outline">
+            <div className="nav-title">
               <p>MENU</p>
             </div>
-            <section class="nav">
-              <Link path="" class="nav-row">
-                <Dashboard />
-                <div class="text-container">
-                  <div class="text-label">
-                    <p>Overview</p>
+            <section className="nav">
+              {routes.map((route, index) => (
+                <NavLink key={index} to={'/${route.path}'} className="nav-row">
+                  {addIcon(route.className, pageName)}
+                  <div className="text-container ${route.path}">
+                    <div className="text-label">
+                      <p>{route.className.substring(0).replace(/-/gi, ' ')}</p>
+                    </div>
                   </div>
-                </div>
-              </Link>
-              `
-              <Link path="" class="nav-row">
-                <Star />
-                <div class="text-container">
-                  <div class="text-label">
-                    <p>Introduction</p>
-                  </div>
-                </div>
-              </Link>
-              <Link path="/lesson-1" class="nav-row">
-                <Lesson />
-                <div class="text-container">
-                  <div class="text-label">
-                    <p>Lesson 1</p>
-                  </div>
-                </div>
-              </Link>
-              <Link path="" class="nav-row">
-                <Lesson />
-                <div class="text-container">
-                  <div class="text-label">
-                    <p>Lesson 2</p>
-                  </div>
-                </div>
-              </Link>
-              <Link path="" class="nav-row">
-                <Lesson />
-                <div class="text-container">
-                  <div class="text-label">
-                    <p>Lesson 3</p>
-                  </div>
-                </div>
-              </Link>
-              <Link path="" class="nav-row">
-                <Settings />
-                <div class="text-container">
-                  <div class="text-label">
-                    <p>Settings</p>
-                  </div>
-                </div>
-              </Link>
+                </NavLink>
+              ))}
+              <Outlet />
             </section>
           </div>
         </div>
       </div>
     </div>
   );
+}
+
+/**
+ * Function to add icons based on the page name and route class name.
+ *
+ * @param {string} className - The class name of the route.
+ * @param {string} pageName - The name of the current active page.
+ *
+ * @returns {JSX.Element} The icon component.
+ */
+function addIcon(className, pageName) {
+  console.log(className);
+  switch (className) {
+    case 'Lesson-1':
+    case 'Lesson-2':
+    case 'Lesson-3':
+      if (pageName === className) {
+        return <LessonFill />;
+      } else {
+        return <Lesson />;
+      }
+    case 'Overview':
+      if (pageName === className) {
+        return <OverviewFill />;
+      } else {
+        return <Overview />;
+      }
+    case 'Settings':
+      if (pageName === className) {
+        return <SettingsFill />;
+      } else {
+        return <Settings />;
+      }
+    case 'Introduction':
+      if (pageName === className) {
+        return <StarFill />;
+      } else {
+        return <Star />;
+      }
+    default:
+      return null;
+  }
 }

@@ -1,16 +1,11 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Routes } from './Routes';
-
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/pages/home/Home';
+import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Home />
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
-
-export default App;
