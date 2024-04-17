@@ -1,3 +1,7 @@
+/**
+ * This is the CSS file for the MenuCard component.
+ */
+
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
@@ -81,15 +85,12 @@
   width: fit-content;
 }
 
-.nav-row .log-out-text p {
-  font-size: 25px;
-}
-
 .nav-row {
   gap: 1.5rem;
   display: flex;
   align-items: center;
   margin-top: 1.3rem;
+  text-decoration: none;
 }
 
 .text-container,
@@ -101,6 +102,11 @@
 
 .text-container {
   padding-top: 1.5rem;
+}
+
+/* Log Out Button (not currently included) */
+.nav-row .log-out-text p {
+  font-size: 25px;
 }
 
 .log-out {

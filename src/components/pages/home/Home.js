@@ -18,7 +18,7 @@ export default function Home() {
       </div>
       <div className="content">
         <div className="menu">
-          <MenuCard />
+          <MenuCard pageName="Overview" />
         </div>
         <div className="content-card">
           <OverviewCard />

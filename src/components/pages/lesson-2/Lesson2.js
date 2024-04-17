@@ -17,7 +17,7 @@ export default function Lesson2() {
       </div>
       <div className="content">
         <div className="menu">
-          <MenuCard />
+          <MenuCard pageName="Lesson-1" />
         </div>
         <div className="content-card"></div>
       </div>
