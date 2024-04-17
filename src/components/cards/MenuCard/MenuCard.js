@@ -9,7 +9,7 @@ import { StarFill } from '../../icons/Star-Fill.js';
 import { Overview } from '../../icons/Dashboard.js';
 import { OverviewFill } from '../../icons/Dashboard-Fill.js';
 import './style.css';
-import routes from '../../../routes.js';
+import routes from '../../../Routes.js';
 
 /**
  * Menu card with navigation links.
@@ -29,9 +29,9 @@ export default function MenuCard({ pageName }) {
             </div>
             <section className="nav">
               {routes.map((route, index) => (
-                <NavLink key={index} to={'/${route.path}'} className="nav-row">
+                <NavLink key={index} to={`\${route.path}`} className="nav-row">
                   {addIcon(route.className, pageName)}
-                  <div className="text-container ${route.path}">
+                  <div className="text-container">
                     <div className="text-label">
                       <p>{route.className.substring(0).replace(/-/gi, ' ')}</p>
                     </div>
@@ -56,7 +56,6 @@ export default function MenuCard({ pageName }) {
  * @returns {JSX.Element} The icon component.
  */
 function addIcon(className, pageName) {
-  console.log(className);
   switch (className) {
     case 'Lesson-1':
     case 'Lesson-2':

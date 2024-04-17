@@ -15,25 +15,3 @@ const routes = [
 ];
 
 export default routes;
-/*
-  return (
-    <Routes>
-      <Route path="/">
-        <Home />
-      </Route>
-      <Route path="/lesson1">
-        <Lesson1 />
-      </Route>
-      <Route path="/lesson2">
-        <Lesson2 />
-      </Route>
-      <Route path="/lesson3">
-        <Lesson3 />
-      </Route>
-      <Route path="/settings">
-        <Settings />
-      </Route>
-    </Routes>
-  );
-};
-*/
