@@ -7,11 +7,15 @@ import Settings from './components/pages/settings/Settings';
 
 const routes = [
   { path: '/', element: <Home />, className: 'Overview' },
-  { path: '/intro', element: <Intro />, className: 'Introduction' },
-  { path: '/lesson1', element: <Lesson1 />, className: 'Lesson-1' },
-  { path: '/lesson2', element: <Lesson2 />, className: 'Lesson-2' },
-  { path: '/lesson3', element: <Lesson3 />, className: 'Lesson-3' },
-  { path: '/settings', element: <Settings />, className: 'Settings' },
+  { path: '/intro/:id', element: <Intro />, className: 'Introduction' },
+  { path: '/lesson1/:id', element: <Lesson1 />, className: 'Lesson-1' },
+  { path: '/lesson2/:id', element: <Lesson2 />, className: 'Lesson-2' },
+  { path: '/lesson3/:id', element: <Lesson3 />, className: 'Lesson-3' },
+  {
+    path: '/settings/:id',
+    element: <Settings />,
+    className: 'Settings',
+  },
 ];
 
 export default routes;

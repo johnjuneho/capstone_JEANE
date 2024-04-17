@@ -5,6 +5,7 @@ import MenuCard from '../../cards/MenuCard/MenuCard';
 import './style.css';
 
 export default function Lesson1() {
+  const params = useParams();
   return (
     <div className="home-dashboard">
       <div className="container">
@@ -18,9 +19,11 @@ export default function Lesson1() {
       </div>
       <div className="content">
         <div className="menu">
-          <MenuCard pageName="Lesson-1" />
+          <MenuCard pageName="Introduction" />
         </div>
-        <div className="content-card"></div>
+        <div className="content-card">
+          <p>{params.id}</p>
+        </div>
       </div>
     </div>
   );
