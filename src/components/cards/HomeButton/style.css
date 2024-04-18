@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 
-div {
+.logo-container {
   display: flex;
   align-items: center;
   gap: 2rem;
   position: relative;
   height: 4.75rem;
-}
-
-button {
-  outline: none;
-  border: none;
-  background: none;
 }
 
 #logo-title {
@@ -24,7 +18,7 @@ button {
   word-wrap: break-word;
 }
 
-img {
+.logo-img {
   width: 3.375rem;
   height: 4.0625rem;
   position: relative;
