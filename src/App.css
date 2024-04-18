@@ -1,8 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 body {
-  /*
-  margin: 5rem;
-  margin-top: 10rem;
-  */
   background-color: #aad8b1;
   overflow: hidden;
+}
+
+.home-dashboard {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 2rem;
+  padding: 2.5rem 40rem 1rem 2.5rem;
+}
+
+.container {
+  height: 65px;
+  position: relative;
+  width: 100%;
+}
+
+.container-2 {
+  height: 65px;
+}
+
+.header {
+  align-items: center;
+  display: inline-flex;
+  gap: 32px;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  align-items: flex-start;
+  display: flex;
+  gap: 57px;
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+}
+
+.content-card {
+  width: 73rem;
+  height: 43rem;
+  box-shadow: -8px 8px 0px #4e4e4e;
+  border-radius: 20px;
+  background-color: rgba(255, 252, 238, 1);
+  padding: 2.6rem 2.6rem 2.6rem 2.6rem;
+}
+
+.container {
+  height: 4.0625rem;
+  position: relative;
+  width: 100%;
+}
+
+.container-2 {
+  height: 4.0625rem;
+}
+
+.header {
+  align-items: center;
+  display: inline-flex;
+  gap: 2rem;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+  margin-right: 3.5625rem;
+}
+
+.menu,
+.overview {
+  align-items: flex-start;
+  display: flex;
+}
+
+.menu {
+  height: 0rem;
+  margin: 0rem;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import HomeButton from '../../cards/HomeButton/HomeButton';
 import MenuCard from '../../cards/MenuCard/MenuCard';
-import './style.css';
+import '../../../App.css';
 
 export default function Lesson1() {
   const params = useParams();

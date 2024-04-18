@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import HomeButton from '../../cards/HomeButton/HomeButton';
 import MenuCard from '../../cards/MenuCard/MenuCard';
 import TextContent from '../../cards/ContentCard/TextContent/TextContent';
-import './style.css';
+import '../../../App.css';
 
 export default function Intro() {
   const params = useParams();

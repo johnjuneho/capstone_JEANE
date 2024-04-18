@@ -2,7 +2,7 @@ import React from 'react';
 import HomeButton from '../../cards/HomeButton/HomeButton';
 import MenuCard from '../../cards/MenuCard/MenuCard';
 import OverviewContent from '../../cards/ContentCard/OverviewContent/OverviewContent';
-import './style.css';
+import '../../../App.css';
 
 export default function Home() {
   return (
