@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeButton from '../../cards/HomeButton/HomeButton';
 import MenuCard from '../../cards/MenuCard/MenuCard';
-import OverviewCard from '../../cards/OverviewCard/OverviewCard';
+import OverviewContent from '../../cards/ContentCard/OverviewContent/OverviewContent';
 import './style.css';
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
           <MenuCard pageName="Overview" />
         </div>
         <div className="content-card">
-          <OverviewCard />
+          <OverviewContent />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import ProgressBar from '../ProgressBar/ProgressBar';
-import star from '../../../images/star.png';
+import star from '../../../../images/star.png';
 import React from 'react';
 import './style.css';
 

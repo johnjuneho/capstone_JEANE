@@ -23,7 +23,7 @@ export default function MenuCard({ pageName }) {
     <div className="outer-frame">
       <div className="inner-frame">
         <div className="menu-card">
-          <div className="outline">
+          <div className="menu-outline">
             <div className="nav-title">
               <p>MENU</p>
             </div>

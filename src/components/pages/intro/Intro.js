@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import HomeButton from '../../cards/HomeButton/HomeButton';
 import MenuCard from '../../cards/MenuCard/MenuCard';
+import TextContent from '../../cards/ContentCard/TextContent/TextContent';
 import './style.css';
 
 export default function Intro() {
@@ -22,7 +23,7 @@ export default function Intro() {
           <MenuCard pageName="Introduction" />
         </div>
         <div className="content-card">
-          <p>{params.id}</p>
+          <TextContent />
         </div>
       </div>
     </div>

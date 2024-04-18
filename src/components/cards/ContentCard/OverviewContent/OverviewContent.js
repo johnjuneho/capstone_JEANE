@@ -1,9 +1,9 @@
 import React from 'react';
 import ProgressOverview from './ProgressOverview/ProgressOverview';
-import profile from '../../images/profilepic.png';
+import profile from '../../../images/profilepic.png';
 import './style.css';
 
-export default function OverviewCard() {
+export default function OverviewContent() {
   return (
     <div className="overview-card">
       <div className="outline">
