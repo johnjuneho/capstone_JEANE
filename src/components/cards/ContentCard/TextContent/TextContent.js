@@ -5,10 +5,7 @@ import './style.css';
 export default function TextContent() {
   return (
     <div class="lesson-img">
-      <img
-        src="../../../images/text-content-placeholder.png"
-        alt="A cartoon person training a dragon."
-      />
+      <img src={image} alt="A cartoon person training a dragon." />
       <div class="lesson-heading">
         <p>Objective 1: Asking Clearly</p>
         <div class="lesson-container">
@@ -19,6 +16,11 @@ export default function TextContent() {
             carefully! As we have learned, large language modules predict the
             next words. We need to think like AI and choose our words carefully!
           </div>
+          <button className="next-button">
+            <div className="frame">
+              <div className="text-wrapper">Next</div>
+            </div>
+          </button>
         </div>
       </div>
     </div>

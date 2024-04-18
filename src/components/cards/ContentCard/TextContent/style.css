@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 .lesson-img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 38px;
+  gap: 0.1rem;
   display: flex;
 }
 
 .lesson-img img {
-  width: 892px;
-  height: 372px;
-  border-radius: 20px;
-  border: 3px black solid;
+  width: 70%;
+  height: 70%;
 }
 
 .lesson-heading {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 17px;
   display: flex;
 }
 
 .lesson-heading > p:first-child {
   width: 503px;
   color: #3b2b23;
-  font-size: 39px;
+  font-size: 35px;
   font-family: 'Germania One';
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -43,94 +43,56 @@
   flex-direction: column;
 }
 
-.button-container {
-  padding-left: 26px;
-  padding-right: 26px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  background: #ffae4e;
-  box-shadow: -4px 4px 0px #4f4f4f;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 3px black solid;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 10px;
-  display: inline-flex;
-}
-
-.button-container .button {
-  width: 25px;
-  height: 25px;
-  position: relative;
-}
-
-.button-container .button-text {
-  text-align: center;
-  color: black;
-  font-size: 36px;
-  font-family: 'Averia Sans Libre';
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
 .lesson-text {
   width: 1017px;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Averia Sans Libre';
   font-weight: 400;
   line-height: 40px;
   word-wrap: break-word;
 }
 
-.next-button-container {
-  width: 223px;
-  padding-left: 26px;
-  padding-right: 26px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  background: #ffae4e;
-  box-shadow: -4px 4px 0px #4f4f4f;
+/* Button Styling */
+.next-button {
+  all: unset;
+  align-items: center;
+  background-color: #ffffff;
+  border: 3px solid;
+  border-color: #000000;
   border-radius: 20px;
-  overflow: hidden;
-  border: 3px black solid;
+  box-shadow: -4px 4px 0px #4f4f4f;
+  box-sizing: border-box;
+  display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
   gap: 10px;
-  display: inline-flex;
-}
-
-.next-button-container .button-text {
-  width: 73px;
-  height: 45px;
-  text-align: center;
-  color: black;
-  font-size: 36px;
-  font-family: 'Averia Sans Libre';
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.next-button-container .button {
-  width: 45px;
-  height: 45px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 14px 26px;
   position: relative;
+  width: 223px;
 }
 
-.next-button-container .button .line {
-  width: 11.25px;
-  height: 22.5px;
-  left: 33.75px;
-  top: 33.75px;
-  position: absolute;
-  transform: rotate(-180deg);
-  transform-origin: 0 0;
-  border: 2px #33363f solid;
+.next-button .frame {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
-.next-button-container .button .line:nth-child(2) {
-  left: 22.5px;
+.next-button .text-wrapper {
+  color: #000000;
+  font-family: 'Averia Sans Libre-Regular', Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  height: 45px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 73px;
 }
