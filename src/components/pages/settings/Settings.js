@@ -19,7 +19,7 @@ export default function Settings() {
       </div>
       <div className="content">
         <div className="menu">
-          <MenuCard pageName="Introduction" />
+          <MenuCard pageName="Settings" />
         </div>
         <div className="content-card">
           <p>{params.id}</p>

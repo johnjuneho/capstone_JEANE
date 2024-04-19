@@ -19,7 +19,7 @@ export default function Lesson2() {
       </div>
       <div className="content">
         <div className="menu">
-          <MenuCard pageName="Introduction" />
+          <MenuCard pageName="Lesson-2" />
         </div>
         <div className="content-card">
           <p>{params.id}</p>

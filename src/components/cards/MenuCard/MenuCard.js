@@ -56,6 +56,7 @@ export default function MenuCard({ pageName }) {
  * @returns {JSX.Element} The icon component.
  */
 function addIcon(className, pageName) {
+  console.log(className + ' ' + pageName);
   switch (className) {
     case 'Lesson-1':
     case 'Lesson-2':
