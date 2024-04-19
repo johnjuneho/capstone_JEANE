@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import HomeButton from '../../cards/HomeButton/HomeButton';
 import MenuCard from '../../cards/MenuCard/MenuCard';
+import QuizContent from '../../cards/ContentCard/QuizContent/QuizContent';
 import '../../../App.css';
 
 export default function Lesson1() {
@@ -22,7 +23,7 @@ export default function Lesson1() {
           <MenuCard pageName="Lesson-1" />
         </div>
         <div className="content-card">
-          <p>{params.id}</p>
+          <QuizContent />
         </div>
       </div>
     </div>

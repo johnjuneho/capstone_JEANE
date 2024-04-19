@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../../images/text-content-placeholder.png';
+import NextButtons from '../../NextButtons/NextButtons';
 import './style.css';
 
 export default function TextContent() {
@@ -18,14 +19,7 @@ export default function TextContent() {
           </div>
         </div>
       </div>
-      <section className="btn-nav">
-        <button className="back-button">
-          <p className="next-text">Back</p>
-        </button>
-        <button className="next-button">
-          <p className="next-text">Next</p>
-        </button>
-      </section>
+      <NextButtons />
     </div>
   );
 }
