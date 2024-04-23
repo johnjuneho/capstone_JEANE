@@ -87,3 +87,8 @@ body {
   height: 0rem;
   margin: 0rem;
 }
+
+.progress-count {
+  display: flex;
+  justify-content: center;
+}
