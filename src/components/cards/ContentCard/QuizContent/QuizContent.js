@@ -1,5 +1,7 @@
-import { React, useState } from 'react';
+import { React, useState, createRoot } from 'react';
+import ReactDOM from 'react-dom';
 import NextButtons from '../../NextButtons/NextButtons';
+import ExplainPopup from '../ExplainPopup/ExplainPopup';
 import './style.css';
 
 export default function QuizContent({
@@ -13,19 +15,31 @@ export default function QuizContent({
   const [answer, setAnswer] = useState(null);
 
   const onChoiceClick = (choice, index) => {
-    console.log('hehy');
     setChoiceIdx(index);
     if (index === answerIndex) {
       setAnswer(true);
     } else {
       setAnswer(false);
     }
+    explainPopup(choice.explanation);
   };
 
   const onClickSlide = (idx) => {
     setChoiceIdx(null);
     slideChange(currSlide + idx);
   };
+
+  // TODO: this displays the feedback dragon;
+  // it should also disable the choice and next/back buttons
+  // until the 'x' has been clicked on the speech bubble
+  const explainPopup = (msg) => {
+    const popup = document.createElement('div');
+    popup.className = 'popup-container';
+    document.querySelector('.quiz-container').appendChild(popup);
+    ReactDOM.render(<ExplainPopup message={msg} />, popup);
+    console.log(msg);
+  };
+
   return (
     <div className="quiz-container">
       <div className="question-container">
@@ -38,7 +52,7 @@ export default function QuizContent({
           className={`answer-container ${
             choiceIdx === index ? 'selected-ans' : ''
           }`}
-          onClick={() => onChoiceClick}
+          onClick={() => onChoiceClick(choice, index)}
         >
           <div className="answer-text">
             <p className="answer-content">{choice.name}</p>
