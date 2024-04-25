@@ -30,7 +30,7 @@ export const L1Content = {
     {
       type: 'end',
       lessonTitle: 'Lesson1',
-      message: 'this is the end',
+      message: 'Congrats! Move on to the next lesson',
     },
   ],
 };

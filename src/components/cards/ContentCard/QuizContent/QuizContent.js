@@ -37,7 +37,6 @@ export default function QuizContent({
     popup.className = 'popup-container';
     document.querySelector('.quiz-container').appendChild(popup);
     ReactDOM.render(<ExplainPopup message={msg} />, popup);
-    console.log(msg);
   };
 
   return (
@@ -73,11 +72,7 @@ export default function QuizContent({
           <span className="active-q">{currSlide + 1}</span>
           <span className="total-q">/{totalLength}</span>
         </div>
-        <button
-          className="next-button"
-          onClick={() => onClickSlide(1)}
-          disabled={choiceIdx === null || answer !== true}
-        >
+        <button className="next-button" onClick={() => onClickSlide(1)}>
           <p className="next-text">
             {currSlide === totalLength - 1 ? 'Finish' : 'Next'}
           </p>

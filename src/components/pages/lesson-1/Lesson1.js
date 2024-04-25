@@ -44,7 +44,9 @@ export default function Lesson1() {
     );
   } else if (contentType === 'end') {
     const { lessonTitle, message } = content[currSlide];
-    <EndScreen message={message} lessonTitle={lessonTitle} />;
+    contentComponent = (
+      <EndScreen lessonTitle={lessonTitle} message={message} />
+    );
   }
 
   return (
