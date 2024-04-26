@@ -1,9 +1,12 @@
+const image1 = require('../images/text-content-placeholder.png');
+
 export const L1Content = {
   content: [
     {
       type: 'lecture',
-      image: '',
-      text: '',
+      image: image1,
+      alt: 'A cartoon person training a dragon.',
+      text: "It's important to learn how to ask ChatGPT in a way that gets us the answers we need without any mix-ups or wrong information. It's like playing a word game with a computer—we need to pick our words really carefully! As we have learned, large language models predict the next words. We need to think like AI and choose our words carefully!",
     },
     {
       type: 'quiz',

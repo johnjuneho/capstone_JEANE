@@ -3,7 +3,7 @@ import HomeButton from '../../cards/HomeButton/HomeButton';
 import MenuCard from '../../cards/MenuCard/MenuCard';
 import QuizContent from '../../cards/ContentCard/QuizContent/QuizContent';
 import EndScreen from '../../cards/ContentCard/EndScreen/EndScreen';
-import { L1Content } from '../../../Content/L1-Content';
+import { L1Content } from '../../Content/L1-Content';
 import TextContent from '../../cards/ContentCard/TextContent/TextContent';
 import '../../../App.css';
 
@@ -20,8 +20,9 @@ export default function Lesson1() {
   let contentType = content[currSlide].type;
 
   if (contentType === 'lecture') {
-    const { type, image, text } = content[currSlide];
-    cardContent = { type, image, text };
+    const { type, image, alt, text } = content[currSlide];
+    cardContent = { type, image, alt, text };
+    console.log(image);
     contentComponent = (
       <TextContent
         cardContent={cardContent}
