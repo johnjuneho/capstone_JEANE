@@ -1,0 +1,29 @@
+/* style.css */
+
+.modal-container {
+  width: 991px;
+  height: 778px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0.4;
+  background: #b8b8b8;
+  box-shadow: 0px 4px 0px #4f4f4f;
+  border-radius: 20px;
+  border: 3px black solid;
+}
+
+.explanation {
+  width: 614px;
+  left: 202px;
+  top: 278px;
+  position: absolute;
+  color: #3b2b23;
+  font-size: 30px;
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+}

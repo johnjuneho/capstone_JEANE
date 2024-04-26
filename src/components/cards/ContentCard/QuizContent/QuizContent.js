@@ -14,8 +14,9 @@
  * @returns {JSX.Element} The rendered QuizContent component.
  */
 
-import { React, useState, createRoot } from 'react';
+import { React, useState } from 'react';
 import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
 import ExplainPopup from '../ExplainPopup/ExplainPopup';
 import './style.css';
 
@@ -28,6 +29,12 @@ export default function QuizContent({
   const { question, choices, answerIndex } = cardContent;
   const [choiceIdx, setChoiceIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
+  const [modalIsOpen, setIsOpen] = useState(false);
+  let currChoice;
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   /**
    * Handle when a choice is clicked.
@@ -35,13 +42,14 @@ export default function QuizContent({
    * @param {number} index The index of the choice in the choices array.
    */
   const onChoiceClick = (choice, index) => {
+    currChoice = choice.explanation;
     setChoiceIdx(index);
     if (index === answerIndex) {
       setAnswer(true);
     } else {
       setAnswer(false);
     }
-    explainPopup(choice.explanation);
+    setIsOpen(true);
   };
 
   /**
@@ -53,19 +61,11 @@ export default function QuizContent({
     slideChange(currSlide + idx);
   };
 
-  /**
-   * Display an explanation popup with cartoon dragon.
-   * @param {string} msg The explanation message.
-   */
-  const explainPopup = (msg) => {
-    const popup = document.createElement('div');
-    popup.className = 'popup-container';
-    document.querySelector('.quiz-container').appendChild(popup);
-    ReactDOM.render(<ExplainPopup message={msg} />, popup);
-  };
-
   return (
     <section className="quiz-container">
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+        <ExplainPopup message={currChoice} closeModal={closeModal} />
+      </Modal>
       <div className="question-container">
         <h2 className="question-title">Question 1</h2>
         <p className="question-text">{question}</p>

@@ -47,7 +47,7 @@ export default function TextContent({
           <p className="next-text">Back</p>
         </button>
         <div className="progress-count">
-          <span className="active-q">{currSlide}</span>
+          <span className="active-q">{currSlide + 1}</span>
           <span className="total-q">/{totalLength}</span>
         </div>
         <button className="next-button" onClick={() => onClickSlide(1)}>
