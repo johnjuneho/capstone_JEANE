@@ -1,6 +1,5 @@
 import { React, useState, createRoot } from 'react';
 import ReactDOM from 'react-dom';
-import NextButtons from '../../NextButtons/NextButtons';
 import ExplainPopup from '../ExplainPopup/ExplainPopup';
 import './style.css';
 
@@ -40,9 +39,9 @@ export default function QuizContent({
   };
 
   return (
-    <div className="quiz-container">
+    <section className="quiz-container">
       <div className="question-container">
-        <div className="question-title">Question 1</div>
+        <h2 className="question-title">Question 1</h2>
         <p className="question-text">{question}</p>
       </div>
       {choices.map((choice, index) => (
@@ -78,6 +77,6 @@ export default function QuizContent({
           </p>
         </button>
       </section>
-    </div>
+    </section>
   );
 }

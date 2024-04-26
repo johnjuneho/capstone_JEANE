@@ -20,12 +20,12 @@ import routes from '../../../Routes.js';
  */
 export default function MenuCard({ pageName }) {
   return (
-    <div className="outer-frame">
+    <section className="outer-frame">
       <div className="inner-frame">
         <div className="menu-card">
           <div className="menu-outline">
             <div className="nav-title">
-              <p>MENU</p>
+              <h2>MENU</h2>
             </div>
             <section className="nav">
               {routes.map((route, index) => (
@@ -43,7 +43,7 @@ export default function MenuCard({ pageName }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

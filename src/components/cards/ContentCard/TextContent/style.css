@@ -21,7 +21,7 @@
   display: flex;
 }
 
-.lesson-heading > p:first-child {
+.lesson-heading h2 {
   width: 503px;
   color: #3b2b23;
   font-size: 35px;
@@ -47,4 +47,5 @@
   font-weight: 400;
   line-height: 40px;
   word-wrap: break-word;
+  margin: 0;
 }

@@ -4,9 +4,9 @@ import logo from '../../images/logo.png';
 
 export default function HomeButton() {
   return (
-    <div class="logo-container">
+    <section class="logo-container">
       <img src={logo} alt="dragon outline" class="logo-img" />
-      <p id="logo-title">How to Train Your ChatBot</p>
-    </div>
+      <h1 id="logo-title">How to Train Your ChatBot</h1>
+    </section>
   );
 }

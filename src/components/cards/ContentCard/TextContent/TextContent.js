@@ -1,5 +1,4 @@
-import { React, Image } from 'react';
-import NextButtons from '../../NextButtons/NextButtons';
+import { React } from 'react';
 import './style.css';
 
 export default function TextContent({
@@ -13,14 +12,14 @@ export default function TextContent({
   };
   const { type, title, image, alt, text } = cardContent;
   return (
-    <div class="lesson-container">
+    <section class="lesson-container">
       <img src={image} alt={alt} />
-      <div class="lesson-heading">
-        <p>{title}</p>
+      <article class="lesson-heading">
+        <h2>{title}</h2>
         <div class="lesson-text-container">
-          <div class="lesson-text">{text}</div>
+          <p class="lesson-text">{text}</p>
         </div>
-      </div>
+      </article>
       <section className="btn-nav">
         <button
           className="back-button"
@@ -39,6 +38,6 @@ export default function TextContent({
           </p>
         </button>
       </section>
-    </div>
+    </section>
   );
 }

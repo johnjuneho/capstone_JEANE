@@ -27,6 +27,7 @@
   font-weight: 400;
   letter-spacing: 1.5px;
   word-wrap: break-word;
+  margin: 0;
 }
 
 .question-text {
