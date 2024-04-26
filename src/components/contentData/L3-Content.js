@@ -5,7 +5,7 @@
 
 const image1 = require('../images/text-content-placeholder.png');
 
-export const L1Content = {
+export const L3Content = {
   content: [
     {
       type: 'lecture',

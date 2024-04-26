@@ -13,7 +13,7 @@ import HomeLogo from '../../cards/HomeLogo/HomeLogo';
 import MenuCard from '../../cards/MenuCard/MenuCard';
 import QuizContent from '../../cards/ContentCard/QuizContent/QuizContent';
 import EndScreen from '../../cards/ContentCard/EndScreen/EndScreen';
-import { IntroContent } from '../../Content/Intro-Content';
+import { IntroContent } from '../../contentData/Intro-Content';
 import TextContent from '../../cards/ContentCard/TextContent/TextContent';
 import '../../../App.css';
 
