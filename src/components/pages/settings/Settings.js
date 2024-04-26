@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import HomeButton from '../../cards/HomeButton/HomeButton';
+import HomeLogo from '../../cards/HomeLogo/HomeLogo';
 import MenuCard from '../../cards/MenuCard/MenuCard';
 import '../../../App.css';
 
@@ -12,7 +12,7 @@ export default function Settings() {
         <div className="container-2">
           <div className="header">
             <div className="logo">
-              <HomeButton />
+              <HomeLogo />
             </div>
           </div>
         </div>

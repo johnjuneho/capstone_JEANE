@@ -108,7 +108,8 @@
   justify-content: center;
 }
 
-.next-text {
+.next-text,
+.progress-count {
   color: #000000;
   font-family: 'Averia Sans Libre', Helvetica;
   font-size: 30px;

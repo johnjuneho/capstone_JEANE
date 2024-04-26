@@ -1,3 +1,9 @@
+/**
+ * This component renders a menu card with navigation links to all the pages of the website with icons.
+ * @param {string} pageName - The name of the current active page.
+ * @returns {JSX.Element} The MenuCard component.
+ */
+
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { Settings } from '../../icons/Settings.js';
@@ -11,13 +17,6 @@ import { OverviewFill } from '../../icons/Dashboard-Fill.js';
 import './style.css';
 import routes from '../../../Routes.js';
 
-/**
- * Menu card with navigation links.
- *
- * @param {string} pageName - The name of the current active page.
- *
- * @returns {JSX.Element} The MenuCard component.
- */
 export default function MenuCard({ pageName }) {
   return (
     <section className="outer-frame">
@@ -48,7 +47,7 @@ export default function MenuCard({ pageName }) {
 }
 
 /**
- * Function to add icons based on the page name and route class name.
+ * Add icons based on the page name and route class name.
  *
  * @param {string} className - The class name of the route.
  * @param {string} pageName - The name of the current active page.

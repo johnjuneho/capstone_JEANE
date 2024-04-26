@@ -1,5 +1,15 @@
+/**
+ * This component represents the first lesson of the application.
+ *
+ * It includes the following functionalities:
+ * - Rendering of the lesson content based on the current slide (lecture, quiz, or end screen).
+ * - Navigation between slides.
+ * - Displaying the lesson title and logo.
+ * @returns {JSX.Element} The rendered Lesson1 component.
+ */
+
 import React, { useState } from 'react';
-import HomeButton from '../../cards/HomeButton/HomeButton';
+import HomeLogo from '../../cards/HomeLogo/HomeLogo';
 import MenuCard from '../../cards/MenuCard/MenuCard';
 import QuizContent from '../../cards/ContentCard/QuizContent/QuizContent';
 import EndScreen from '../../cards/ContentCard/EndScreen/EndScreen';
@@ -11,6 +21,10 @@ export default function Lesson1() {
   const content = L1Content.content;
   const [currSlide, setCurrSlide] = useState(0);
 
+  /**
+   * Function to change the current slide.
+   * @param {number} newSlide The index of the new slide.
+   */
   const slideChange = (newSlide) => {
     setCurrSlide(newSlide);
   };
@@ -56,7 +70,7 @@ export default function Lesson1() {
         <div className="container-2">
           <div className="header">
             <div className="logo">
-              <HomeButton />
+              <HomeLogo />
             </div>
           </div>
         </div>

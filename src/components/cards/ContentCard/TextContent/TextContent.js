@@ -1,3 +1,19 @@
+/*
+ * This component renders the a lesson slide that features and image, title, and paragraph.
+ *
+ * Props:
+ * - cardContent: An object containing information about the slide content, including type, title, image, alt, and text.
+ * - currSlide: The index of the current slide.
+ * - totalLength: The total number of slides in the lesson.
+ * - slideChange: A function to change the current slide.
+ *
+ * @param {Object} cardContent Information about the slide content.
+ * @param {number} currSlide The index of the current slide.
+ * @param {number} totalLength The total number of slides in the lesson.
+ * @param {Function} slideChange Function to change the current slide.
+ * @returns {JSX.Element} The rendered TextContent component.
+ */
+
 import { React } from 'react';
 import './style.css';
 
@@ -10,7 +26,9 @@ export default function TextContent({
   const onClickSlide = (idx) => {
     slideChange(currSlide + idx);
   };
+
   const { type, title, image, alt, text } = cardContent;
+
   return (
     <section class="lesson-container">
       <img src={image} alt={alt} />

@@ -1,3 +1,19 @@
+/**
+ * This component renders a quiz question with multiple-choice answers.
+ *
+ * Props:
+ * - cardContent: An object containing information about the quiz content, including the question, choices, and answer index.
+ * - currSlide: The index of the current slide.
+ * - totalLength: The total number of slides in the lesson.
+ * - slideChange: A function to change the current slide.
+ *
+ * @param {Object} cardContent Information about the quiz content.
+ * @param {number} currSlide The index of the current slide.
+ * @param {number} totalLength The total number of slides in the lesson.
+ * @param {Function} slideChange Function to change the current slide.
+ * @returns {JSX.Element} The rendered QuizContent component.
+ */
+
 import { React, useState, createRoot } from 'react';
 import ReactDOM from 'react-dom';
 import ExplainPopup from '../ExplainPopup/ExplainPopup';
@@ -13,6 +29,11 @@ export default function QuizContent({
   const [choiceIdx, setChoiceIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
 
+  /**
+   * Handle when a choice is clicked.
+   * @param {Object} choice The choice object.
+   * @param {number} index The index of the choice in the choices array.
+   */
   const onChoiceClick = (choice, index) => {
     setChoiceIdx(index);
     if (index === answerIndex) {
@@ -23,14 +44,19 @@ export default function QuizContent({
     explainPopup(choice.explanation);
   };
 
+  /**
+   * Handle when next/back buttons are clicked.
+   * @param {number} idx The index increment for the next/back action.
+   */
   const onClickSlide = (idx) => {
     setChoiceIdx(null);
     slideChange(currSlide + idx);
   };
 
-  // TODO: this displays the feedback dragon;
-  // it should also disable the choice and next/back buttons
-  // until the 'x' has been clicked on the speech bubble
+  /**
+   * Display an explanation popup with cartoon dragon.
+   * @param {string} msg The explanation message.
+   */
   const explainPopup = (msg) => {
     const popup = document.createElement('div');
     popup.className = 'popup-container';

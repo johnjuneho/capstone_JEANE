@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeButton from '../../cards/HomeButton/HomeButton';
+import HomeLogo from '../../cards/HomeLogo/HomeLogo';
 import MenuCard from '../../cards/MenuCard/MenuCard';
 import OverviewContent from '../../cards/ContentCard/OverviewContent/OverviewContent';
 import '../../../App.css';
@@ -11,7 +11,7 @@ export default function Home() {
         <div className="container-2">
           <div className="header">
             <div className="logo">
-              <HomeButton />
+              <HomeLogo />
             </div>
           </div>
         </div>
