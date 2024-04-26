@@ -20,8 +20,8 @@ export default function Lesson1() {
   let contentType = content[currSlide].type;
 
   if (contentType === 'lecture') {
-    const { type, image, alt, text } = content[currSlide];
-    cardContent = { type, image, alt, text };
+    const { type, title, image, alt, text } = content[currSlide];
+    cardContent = { type, title, image, alt, text };
     console.log(image);
     contentComponent = (
       <TextContent

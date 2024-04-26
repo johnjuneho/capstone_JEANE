@@ -11,12 +11,12 @@ export default function TextContent({
   const onClickSlide = (idx) => {
     slideChange(currSlide + idx);
   };
-  const { type, image, alt, text } = cardContent;
+  const { type, title, image, alt, text } = cardContent;
   return (
     <div class="lesson-container">
       <img src={image} alt={alt} />
       <div class="lesson-heading">
-        <p>Objective 1: Asking Clearly</p>
+        <p>{title}</p>
         <div class="lesson-text-container">
           <div class="lesson-text">{text}</div>
         </div>
