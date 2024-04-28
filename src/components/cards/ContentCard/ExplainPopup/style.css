@@ -1,12 +1,12 @@
 /* style.css */
 
 .modal-container {
-  width: 991px;
-  height: 778px;
+  width: 78.5rem;
+  height: 46rem;
   padding-top: 30px;
   padding-bottom: 30px;
-  left: 0;
-  top: 0;
+  left: 30rem;
+  top: 11.5rem;
   position: absolute;
   opacity: 0.4;
   background: #b8b8b8;
@@ -26,4 +26,8 @@
   font-weight: 400;
   line-height: 30px;
   word-wrap: break-word;
+}
+
+.custom-opacity {
+  opacity: 1 !important;
 }

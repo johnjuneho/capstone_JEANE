@@ -63,7 +63,12 @@ export default function QuizContent({
 
   return (
     <section className="quiz-container">
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        overlayClassName="custom-overlay"
+        className="modal"
+      >
         <ExplainPopup message={currChoice} closeModal={closeModal} />
       </Modal>
       <div className="question-container">

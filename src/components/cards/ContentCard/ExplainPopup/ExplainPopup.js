@@ -5,12 +5,12 @@ export default function ExplainPopup({ message, closeModal }) {
   return (
     <div className="modal-container">
       <img
-        className="dragon"
+        className="dragon custom-opacity"
         src={require('../../../images/dragon.png')}
         alt="cartoon dragon"
       />
       <img
-        className="bubble"
+        className="bubble custom-opacity"
         src={require('../../../images/speechbubble.png')}
         alt="speech bubble"
       />
