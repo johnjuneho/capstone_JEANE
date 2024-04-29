@@ -1,13 +1,3 @@
-/**
- * This component represents the first lesson of the application.
- *
- * It includes the following functionalities:
- * - Rendering of the lesson content based on the current slide (lecture, quiz, or end screen).
- * - Navigation between slides.
- * - Displaying the lesson title and logo.
- * @returns {JSX.Element} The rendered Lesson1 component.
- */
-
 import React, { useState } from 'react';
 import HomeLogo from '../../cards/HomeLogo/HomeLogo';
 import MenuCard from '../../cards/MenuCard/MenuCard';
@@ -33,35 +23,39 @@ export default function Lesson1() {
   let contentComponent;
   let contentType = content[currSlide].type;
 
-  if (contentType === 'lecture') {
-    const { type, title, image, alt, text } = content[currSlide];
-    cardContent = { type, title, image, alt, text };
-    console.log(image);
-    contentComponent = (
-      <TextContent
-        cardContent={cardContent}
-        currSlide={currSlide}
-        totalLength={content.length}
-        slideChange={slideChange}
-      />
-    );
-  } else if (contentType === 'quiz') {
-    const { type, question, choices, answer } = content[currSlide];
-    contentType = 'quiz';
-    cardContent = { type, question, choices, answer };
-    contentComponent = (
-      <QuizContent
-        cardContent={cardContent}
-        currSlide={currSlide}
-        totalLength={content.length}
-        slideChange={slideChange}
-      />
-    );
-  } else if (contentType === 'end') {
-    const { lessonTitle, message } = content[currSlide];
-    contentComponent = (
-      <EndScreen lessonTitle={lessonTitle} message={message} />
-    );
+  // Using a switch-case to manage different content types
+  switch (contentType) {
+    case 'lecture':
+      const { type, title, image, alt, text } = content[currSlide];
+      cardContent = { type, title, image, alt, text };
+      console.log(image); // For debugging purposes
+      contentComponent = (
+        <TextContent
+          cardContent={cardContent}
+          currSlide={currSlide}
+          totalLength={content.length}
+          slideChange={slideChange}
+        />
+      );
+      break;
+    case 'quiz':
+      const { type: quizType, questionNumber, question, choices, answerIndex } = content[currSlide];
+      cardContent = { type: quizType, questionNumber, question, choices, answerIndex };
+      contentComponent = (
+        <QuizContent
+          cardContent={cardContent}
+          currSlide={currSlide}
+          totalLength={content.length}
+          slideChange={slideChange}
+        />
+      );
+      break;
+    case 'end':
+      const { lessonTitle, message } = content[currSlide];
+      contentComponent = <EndScreen lessonTitle={lessonTitle} message={message} />;
+      break;
+    default:
+      contentComponent = null;
   }
 
   return (

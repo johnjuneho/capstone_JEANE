@@ -18,6 +18,8 @@ import TextContent from '../../cards/ContentCard/TextContent/TextContent';
 import '../../../App.css';
 
 export default function Intro() {
+    const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const toggleMenu = () => setIsMenuVisible(!isMenuVisible);
   const content = IntroContent.content;
   const [currSlide, setCurrSlide] = useState(0);
 
