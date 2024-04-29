@@ -4,20 +4,20 @@ import './style.css';
 export default function ExplainPopup({ message, closeModal }) {
   return (
     <div className="modal-container">
+      <div className="x-close" onClick={() => closeModal()}>
+        X
+      </div>
       <img
-        className="dragon custom-opacity"
-        src={require('../../../images/dragon.png')}
-        alt="cartoon dragon"
-      />
-      <img
-        className="bubble custom-opacity"
+        className="bubble"
         src={require('../../../images/speechbubble.png')}
         alt="speech bubble"
       />
+      <img
+        className="dragon"
+        src={require('../../../images/dragon.png')}
+        alt="cartoon dragon"
+      />
       <p className="explanation">{message}</p>
-      <div>
-        <button onClick={() => closeModal()}>X</button>
-      </div>
     </div>
   );
 }

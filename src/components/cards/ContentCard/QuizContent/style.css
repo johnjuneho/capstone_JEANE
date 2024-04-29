@@ -11,10 +11,6 @@
   display: inline-flex;
 }
 
-.Modal img {
-  opacity: 1;
-}
-
 .question-container {
   align-self: stretch;
   flex-direction: column;

@@ -1,33 +1,35 @@
-/* style.css */
-
 .modal-container {
   width: 78.5rem;
   height: 46rem;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 1.8rem;
   left: 30rem;
   top: 11.5rem;
   position: absolute;
   opacity: 0.4;
-  background: #b8b8b8;
+  background-color: #fffcee;
   box-shadow: 0px 4px 0px #4f4f4f;
   border-radius: 20px;
   border: 3px black solid;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  opacity: 1;
 }
 
-.explanation {
-  width: 614px;
-  left: 202px;
-  top: 278px;
-  position: absolute;
-  color: #3b2b23;
-  font-size: 30px;
-  font-family: 'Averia Sans Libre', sans-serif;
-  font-weight: 400;
-  line-height: 30px;
-  word-wrap: break-word;
+.bubble {
+  margin-top: 5rem;
 }
 
-.custom-opacity {
-  opacity: 1 !important;
+.x-close {
+  align-self: flex-start;
+  width: 5rem;
+  opacity: 1;
+  font-family: 'Averia Sans Libre';
+  font-size: 3rem;
+}
+
+.modal-container .dragon {
+  align-self: flex-end;
+  opacity: 1;
 }

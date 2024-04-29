@@ -15,7 +15,6 @@
  */
 
 import { React, useState } from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import ExplainPopup from '../ExplainPopup/ExplainPopup';
 import './style.css';
