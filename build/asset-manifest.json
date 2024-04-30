@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.220c71bc.css",
+    "main.js": "/static/js/main.9dbda03e.js",
+    "static/media/text-content-placeholder.png": "/static/media/text-content-placeholder.04a1f3313f171a96a5e4.png",
+    "static/media/dragon.png": "/static/media/dragon.72854cbab2f7f6db5bb0.png",
+    "static/media/profilepic.png": "/static/media/profilepic.cf580879ab5a201fc231.png",
+    "static/media/speechbubble.png": "/static/media/speechbubble.b40cfdf931046a6bc30a.png",
+    "index.html": "/index.html",
+    "main.220c71bc.css.map": "/static/css/main.220c71bc.css.map",
+    "main.9dbda03e.js.map": "/static/js/main.9dbda03e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.220c71bc.css",
+    "static/js/main.9dbda03e.js"
+  ]
+}

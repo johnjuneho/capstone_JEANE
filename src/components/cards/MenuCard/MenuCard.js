@@ -24,7 +24,7 @@ export default function MenuCard({ pageName }) {
         <div className="menu-card">
           <div className="menu-outline">
             <div className="nav-title">
-              <h2>MENU</h2>
+              <h2>CONTENT</h2>
             </div>
             <section className="nav">
               {routes.map((route, index) => (
