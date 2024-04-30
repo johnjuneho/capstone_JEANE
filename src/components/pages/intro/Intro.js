@@ -73,7 +73,7 @@ export default function Intro() {
       </div>
       <div className="content">
         <div className="menu">
-          <MenuCard pageName="Lesson-1" />
+          <MenuCard pageName="Introduction" />
         </div>
         <div className="content-card">{contentComponent}</div>
       </div>
