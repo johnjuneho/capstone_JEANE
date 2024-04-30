@@ -15,7 +15,6 @@
  */
 
 import { React, useState } from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import ExplainPopup from '../ExplainPopup/ExplainPopup';
 import './style.css';
@@ -30,14 +29,20 @@ export default function QuizContent({
   const [choiceIdx, setChoiceIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
   const [modalIsOpen, setIsOpen] = useState(false);
-  let currChoice;
+  let choiceMsg;
 
   function closeModal() {
     setIsOpen(false);
+    document.querySelector('.quiz-container').classList.remove('hidden');
   }
 
+  /**
+   * Handle when a choice is clicked.
+   * @param {Object} choice The choice object.
+   * @param {number} index The index of the choice in the choices array.
+   */
   const onChoiceClick = (choice, index) => {
-    currChoice = choice.explanation;
+    choiceMsg = choice.explanation;
     setChoiceIdx(index);
     document.querySelector('.quiz-container').classList.add('hidden');
     if (index === answerIndex) {
@@ -48,6 +53,10 @@ export default function QuizContent({
     setIsOpen(true);
   };
 
+  /**
+   * Handle when next/back buttons are clicked.
+   * @param {number} idx The index increment for the next/back action.
+   */
   const onClickSlide = (idx) => {
     setChoiceIdx(null);
     slideChange(currSlide + idx);
@@ -61,7 +70,7 @@ export default function QuizContent({
         overlayClassName="custom-overlay"
         className="modal"
       >
-        <ExplainPopup message={currChoice} closeModal={closeModal} />
+        <ExplainPopup choiceMsg={choiceMsg} closeModal={closeModal} />
       </Modal>
       <div className="question-container">
         <h2 className="question-title">Question {questionNumber}</h2>
