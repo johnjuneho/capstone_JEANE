@@ -33,6 +33,7 @@ export default function QuizContent({
 
   function closeModal() {
     setIsOpen(false);
+    document.querySelector('.quiz-container').classList.remove('hidden');
   }
 
   /**
@@ -43,6 +44,7 @@ export default function QuizContent({
   const onChoiceClick = (choice, index) => {
     currChoice = choice.explanation;
     setChoiceIdx(index);
+    document.querySelector('.quiz-container').classList.add('hidden');
     if (index === answerIndex) {
       setAnswer(true);
     } else {

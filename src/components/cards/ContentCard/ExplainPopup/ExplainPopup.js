@@ -7,17 +7,19 @@ export default function ExplainPopup({ message, closeModal }) {
       <div className="x-close" onClick={() => closeModal()}>
         X
       </div>
-      <img
-        className="bubble"
-        src={require('../../../images/speechbubble.png')}
-        alt="speech bubble"
-      />
+      <div>
+        <img
+          className="bubble"
+          src={require('../../../images/speechbubble.png')}
+          alt="speech bubble"
+        />
+        <p className="explanation">{message}</p>
+      </div>
       <img
         className="dragon"
         src={require('../../../images/dragon.png')}
         alt="cartoon dragon"
       />
-      <p className="explanation">{message}</p>
     </div>
   );
 }

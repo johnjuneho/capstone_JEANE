@@ -1,15 +1,13 @@
 .modal-container {
-  width: 78.5rem;
-  height: 46rem;
+  width: 72.5rem;
+  height: 51rem;
+  overflow: hidden;
   padding: 1.8rem;
+  padding-bottom: 0rem;
   left: 30rem;
   top: 11.5rem;
   position: absolute;
   opacity: 0.4;
-  background-color: #fffcee;
-  box-shadow: 0px 4px 0px #4f4f4f;
-  border-radius: 20px;
-  border: 3px black solid;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -29,7 +27,8 @@
   font-size: 3rem;
 }
 
-.modal-container .dragon {
+.dragon {
   align-self: flex-end;
   opacity: 1;
+  margin: 0;
 }

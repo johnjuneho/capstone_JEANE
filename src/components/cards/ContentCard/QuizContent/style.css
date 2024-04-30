@@ -11,6 +11,10 @@
   display: inline-flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .question-container {
   align-self: stretch;
   flex-direction: column;
