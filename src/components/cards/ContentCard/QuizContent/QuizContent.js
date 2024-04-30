@@ -25,7 +25,7 @@ export default function QuizContent({
   totalLength,
   slideChange,
 }) {
-  const { questionNumber, question, choices, answerIndex } = cardContent;
+  const { question, choices, answerIndex } = cardContent;
   const [choiceIdx, setChoiceIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -73,7 +73,7 @@ export default function QuizContent({
         <ExplainPopup choiceMsg={choiceMsg} closeModal={closeModal} />
       </Modal>
       <div className="question-container">
-        <h2 className="question-title">Question {questionNumber}</h2>
+        <h2 className="question-title">Question 1</h2>
         <p className="question-text">{question}</p>
       </div>
       {choices.map((choice, index) => (
