@@ -15,6 +15,7 @@
  */
 
 import { React, useState } from 'react';
+import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import ExplainPopup from '../ExplainPopup/ExplainPopup';
 import './style.css';
@@ -25,7 +26,7 @@ export default function QuizContent({
   totalLength,
   slideChange,
 }) {
-  const { question, choices, answerIndex } = cardContent;
+  const { questionNumber, question, choices, answerIndex } = cardContent;
   const [choiceIdx, setChoiceIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -33,14 +34,8 @@ export default function QuizContent({
 
   function closeModal() {
     setIsOpen(false);
-    document.querySelector('.quiz-container').classList.remove('hidden');
   }
 
-  /**
-   * Handle when a choice is clicked.
-   * @param {Object} choice The choice object.
-   * @param {number} index The index of the choice in the choices array.
-   */
   const onChoiceClick = (choice, index) => {
     currChoice = choice.explanation;
     setChoiceIdx(index);
@@ -53,10 +48,6 @@ export default function QuizContent({
     setIsOpen(true);
   };
 
-  /**
-   * Handle when next/back buttons are clicked.
-   * @param {number} idx The index increment for the next/back action.
-   */
   const onClickSlide = (idx) => {
     setChoiceIdx(null);
     slideChange(currSlide + idx);
@@ -73,7 +64,7 @@ export default function QuizContent({
         <ExplainPopup message={currChoice} closeModal={closeModal} />
       </Modal>
       <div className="question-container">
-        <h2 className="question-title">Question 1</h2>
+        <h2 className="question-title">Question {questionNumber}</h2>
         <p className="question-text">{question}</p>
       </div>
       {choices.map((choice, index) => (
