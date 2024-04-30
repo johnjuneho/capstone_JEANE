@@ -14,17 +14,17 @@ export const Close = () => {
         cy="34.5"
         r="25.875"
         stroke="#33363F"
-        stroke-width="5.75"
+        strokeWidth="5.75"
       />
       <path
         d="M25.875 43.125L43.125 25.875"
         stroke="#33363F"
-        stroke-width="5.75"
+        strokeWidth="5.75"
       />
       <path
         d="M43.125 43.125L25.875 25.875"
         stroke="#33363F"
-        stroke-width="5.75"
+        strokeWidth="5.75"
       />
     </svg>
   );

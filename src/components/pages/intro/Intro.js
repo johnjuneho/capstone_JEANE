@@ -32,7 +32,6 @@ export default function Intro() {
   if (contentType === 'lecture') {
     const { type, title, image, alt, text } = content[currSlide];
     cardContent = { type, title, image, alt, text };
-    console.log(image);
     contentComponent = (
       <TextContent
         cardContent={cardContent}

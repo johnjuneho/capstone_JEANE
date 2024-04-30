@@ -30,12 +30,12 @@ export default function TextContent({
   const { type, title, image, alt, text } = cardContent;
 
   return (
-    <section class="lesson-container">
+    <section className="lesson-container">
       <img src={image} alt={alt} />
-      <article class="lesson-heading">
+      <article className="lesson-heading">
         <h2>{title}</h2>
-        <div class="lesson-text-container">
-          <p class="lesson-text">{text}</p>
+        <div className="lesson-text-container">
+          <p className="lesson-text">{text}</p>
         </div>
       </article>
       <section className="btn-nav">

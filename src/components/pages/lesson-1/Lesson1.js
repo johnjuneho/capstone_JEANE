@@ -37,7 +37,6 @@ export default function Lesson1() {
     case 'lecture':
       const { type, title, image, alt, text } = content[currSlide];
       cardContent = { type, title, image, alt, text };
-      console.log(image); // For debugging purposes
       contentComponent = (
         <TextContent
           cardContent={cardContent}
@@ -48,8 +47,20 @@ export default function Lesson1() {
       );
       break;
     case 'quiz':
-      const { type: quizType, questionNumber, question, choices, answerIndex } = content[currSlide];
-      cardContent = { type: quizType, questionNumber, question, choices, answerIndex };
+      const {
+        type: quizType,
+        questionNumber,
+        question,
+        choices,
+        answerIndex,
+      } = content[currSlide];
+      cardContent = {
+        type: quizType,
+        questionNumber,
+        question,
+        choices,
+        answerIndex,
+      };
       contentComponent = (
         <QuizContent
           cardContent={cardContent}
@@ -61,7 +72,9 @@ export default function Lesson1() {
       break;
     case 'end':
       const { lessonTitle, message } = content[currSlide];
-      contentComponent = <EndScreen lessonTitle={lessonTitle} message={message} />;
+      contentComponent = (
+        <EndScreen lessonTitle={lessonTitle} message={message} />
+      );
       break;
     default:
       contentComponent = null;

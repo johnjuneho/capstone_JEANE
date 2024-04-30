@@ -10,8 +10,8 @@ import logo from '../../images/logo.png';
 
 export default function HomeLogo() {
   return (
-    <section class="logo-container">
-      <img src={logo} alt="dragon outline" class="logo-img" />
+    <section className="logo-container">
+      <img src={logo} alt="dragon outline" className="logo-img" />
       <h1 id="logo-title">How to Train Your ChatBot</h1>
     </section>
   );
