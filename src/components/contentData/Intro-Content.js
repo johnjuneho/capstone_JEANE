@@ -33,18 +33,18 @@ export const IntroContent = {
       title: 'History of Ai',
       image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: "The story of AI began in the 1950s when scientists first started exploring the idea of creating machines that could think like humans. Over the years, researchers made incredible strides in developing AI technologies, from early programs that could play chess to today's sophisticated systems that power virtual assistants like Siri and Google Assistant. Along the way, there have been ups and downs, breakthroughs and setbacks, but the quest to create truly intelligent machines continues to drive innovation in the field of AI.",
+      text: "The story of AI began in the 1950s when scientists first started exploring the idea of creating machines that could think like humans. Over the years, researchers made incredible strides in developing AI technologies, from early programs that could play chess to today's virtual assistants like Siri and Google Assistant. Along the way, there have been ups and downs, breakthroughs and setbacks, but the quest to create truly intelligent machines continues.",
     },
     {
       type: 'lecture',
       title: 'How AI Makes ChatGPT Work',
       image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: "Now, let's take a peek behind the scenes and see how AI powers ChatGPT! ChatGPT is a type of AI called a large language model, which means it's trained on vast amounts of text data to understand and generate human-like responses to text input. When you ask ChatGPT a question or start a conversation, it analyzes the words you've typed and uses its knowledge to craft a response that makes sense. It's like having a virtual conversation partner who's always ready to chat about anything you want!",
+      text: "Now, let's take a peek behind the scenes and see how AI powers ChatGPT! ChatGPT is a type of AI called a large language model, which means it learns from a lot of text data. The important thing to know is that ChatGPT doesn't \"think.\" Instead, it predicts what word should come next. This is why it can sometime be wrong. It's like having a virtual conversation partner who's always ready to chat about anything you want!",
     },
     {
       type: 'end',
-      lessonTitle: 'Congrats on Completing Introduction to AI!',
+      lessonTitle: 'Introduction: Closing Thoughts',
       message:
         "You now have the knowledge to embark on your AI journey! Let's get started",
     },

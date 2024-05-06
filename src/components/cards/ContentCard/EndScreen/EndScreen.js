@@ -10,7 +10,7 @@ export default function ExplainPopup({ message, lessonTitle }) {
           src={require('../../../images/speechbubble.png')}
           alt="speech bubble"
         />
-        <div className="endMessage">
+        <div className="end-message">
           <h2>{lessonTitle}</h2>
           <p className="explanation">{message}</p>
         </div>
