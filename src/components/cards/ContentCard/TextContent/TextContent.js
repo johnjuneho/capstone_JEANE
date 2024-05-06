@@ -38,11 +38,14 @@ export default function TextContent({
           <p className="lesson-text">{text}</p>
         </div>
       </article>
+      <div className="divider"></div>
       <section className="btn-nav">
         <button
           className="back-button"
           disabled={currSlide === 0}
-          onClick={() => onClickSlide(-1)}
+          onClick={() => {
+            onClickSlide(-1);
+          }}
         >
           <p className="next-text">Back</p>
         </button>

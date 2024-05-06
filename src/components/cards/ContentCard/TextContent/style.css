@@ -50,14 +50,18 @@
   margin: 0;
 }
 
+.divider {
+  flex-grow: 1;
+}
+
 /* Button styling */
 .btn-nav {
+  position: absolute;
+  bottom: 0;
+  width: 1168px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  align-self: flex-end;
-  margin-top: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 .next-button,
@@ -95,5 +99,5 @@
 }
 
 .back-button {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
