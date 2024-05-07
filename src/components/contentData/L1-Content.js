@@ -11,7 +11,7 @@ export const L1Content = {
     },
     {
       type: 'quiz',
-      questionNumber: 1, // Added question number
+      questionNumber: 1,
       question: 'What is the most important feature of a good prompt?',
       choices: [
         {
@@ -35,13 +35,13 @@ export const L1Content = {
     {
       type: 'lecture',
       title: 'Objective 2: Giving Good Details',
-      image: image1, //placeholder
+      image: image1,
       alt: 'A detective looking at clues.',
       text: "We need to be like detectives, providing all the clues so ChatGPT knows exactly what we're talking about. Some of the most important factors to remember when creating your prompt are to provide proper context and to be very specific. Just like with the robot, providing clear context and specific instructions ensures that Chat GPT generates relevant and useful responses tailored to your needs.",
     },
     {
       type: 'quiz',
-      questionNumber: 2, // Added question number
+      questionNumber: 2,
       question: 'Choose the most effective prompt.',
       choices: [
         {
@@ -90,8 +90,8 @@ export const L1Content = {
     },
     {
       type: 'lecture',
-      titel: 'Objective 4: Understanding Politeness in Prompts',
-      image: image1, //placeholder
+      title: 'Objective 4: Understanding Politeness in Prompts',
+      image: image1,
       alt: 'Two people having a conversation.',
       text: "While being polite (like using 'please' and 'thank you') is a good habit, our key focus should be on making your prompts to ChatGPT clear and to the point. Manners are great but not necessarily important in this setting, clarity is king!",
     },
@@ -121,7 +121,7 @@ export const L1Content = {
     },
     {
       type: 'lecture',
-      title: 'Objective 5: Crafting Effective Math Problem Prompts',
+      title: 'Objective 5: Math Problem Prompts',
       image: image1,
       alt: 'A person teaching another person math.',
       text: 'Let’s discover how to ask ChatGPT for help with math in a way that boosts your learning. Instead of simply asking for the answer to math problems, we should be asking for explanations or step-by-step guides that help you understand the process. This will make sure that you get the help you need, while still learning!',

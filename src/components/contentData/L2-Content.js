@@ -12,7 +12,7 @@ export const L2Content = {
       title: 'Lesson 2 Introduction',
       image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: "Imagine you're a chef who just asked an expert for advice on making the perfect dish. You've received a response filled with tips, techniques, and a sprinkle of culinary secrets. Now, it's your turn to taste the advice, adjust the seasoning to your palate, and perhaps even add your signature twist. This is similar to what we do after receiving a response from AI like ChatGPT. It's not just about taking the ingredients we're given; it's about blending them into our own creation.",
+      text: "Imagine you're making your favorite kind of pasta. You have a general idea of what it should taste like. You have your ingredients, and you put them together in the pot. But wait! Before you serve your pasta, taste it to check if it's right! This is similar to what we do after receiving a response from AI like ChatGPT. We need to double check that it's what we want.",
     },
     {
       type: 'lecture',
@@ -26,14 +26,14 @@ export const L2Content = {
       title: 'Lesson 2 Introduction',
       image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: "But here's the key ingredient: originality. Directly using AI's responses is like serving a dish straight from a cookbook without making it your own. It might be good, but it lacks your personal touch. Instead, use the AI's response as a base, then add your own insights, style, and talent. That way, you're not just repeating what's been said; you're creating something uniquely yours, enhancing your understanding and making the learning process truly enriching.",
+      text: "But here's the key ingredient: originality. Directly using AI's responses is like serving a dish straight from a cookbook without making it your own. It lacks your personal touch. Instead, use the AI's response as a base, then add your own insights, style, and talent. That way, you're not just repeating what's been said; you're creating something uniquely yours and actively learning.",
     },
     {
       type: 'lecture',
       title: 'Proper Utilization of ChatGPT Responses Overview',
       image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: "When using ChatGPT, we have to make sure to use the response it outputs correctly. For example, rather than simply accepting the response at right away, it's crucial to critically evaluate it. We should assess its accuracy, relevance, and reliability by fact-checking with other credible sources. Fact-checking is the process of verifying the accuracy and truthfulness of information, claims, or statements. Additionally, we must avoid blindly copying and pasting the response, as this could lead to plagiarism. Instead, we should use the response as a foundation for further research, analysis, and synthesis. By leveraging ChatGPT's output responsibly, we can enhance our understanding and learning outcomes. Let's explore how to effectively utilize ChatGPT's responses to maximize their educational value.",
+      text: "So what do we do with a response? Remember, AI doesn't think like you, but instead predicts what words go together. It's your job to fact-check ChatGPT. Fact-checking is making sure something is true with a trustworthy website, teacher, or book. And remember: copy and pasting a ChatGPT response is plagiarism! Let's explore how to use ChatGPT to learn without cheating.",
     },
     {
       type: 'quiz',
@@ -106,10 +106,10 @@ export const L2Content = {
     },
     {
       type: 'lecture',
-      title: 'Importance of Fact-checking ChatGPT’s Responses',
+      title: 'Fact-Checking ChatGPT’s Responses',
       image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: "Checking ChatGPT's answers is really important. It helps us make sure the information is correct and trustworthy. By looking at other reliable sources, we can double-check if what ChatGPT says is true. This way, we can avoid spreading wrong information (misinformation) and make sure we only share things we know are right. Checking the answers helps us keep the information we use and share honest and reliable. Let's learn more about why it's important to check ChatGPT's answers, and why it is so bad to spread misinformation, so we can make smart decisions.",
+      text: "Checking ChatGPT's answers is really important. It helps us avoid spreading wrong information (misinformation), and make sure we only share things we know are right. Let's learn more about why it's important to check ChatGPT's answers and why misinformation is harmful.",
     },
     {
       type: 'quiz',
@@ -163,7 +163,7 @@ export const L2Content = {
       title: 'Using ChatGPT Responsibly',
       image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: "Using ChatGPT responsibly is super important! It's like double-checking your work to make sure it's accurate and trustworthy. By comparing ChatGPT's answers with information from other trustworthy sources, we can be sure we're getting the right info. This way, we steer clear of spreading any wrong facts and only share what we know is true. Checking ChatGPT's answers helps us keep our info honest and reliable. Let's dive into why it's crucial to use ChatGPT responsibly, so we can make smart choices!",
+      text: "Using ChatGPT responsibly is super important! It's requires double-checking your work. By comparing ChatGPT's answers with information from other trustworthy sources, we can be sure we're getting the right info. This way, we don't spread any wrong facts or rumors. Checking ChatGPT's answers helps us keep our info honest and reliable. Let's dive into why it's crucial to use ChatGPT responsibly, so we can make smart choices!",
     },
     {
       type: 'quiz',
@@ -193,7 +193,7 @@ export const L2Content = {
       title: 'Plagiarism',
       image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: "Plagiarism using ChatGPT is when someone copies and pastes the response they get from ChatGPT without giving credit to where the information came from. It's like taking someone else's work and pretending it's your own. This is not okay because it's not honest or fair to the original creators of the information. Instead of plagiarizing, it's important to use ChatGPT's responses as a reference or inspiration and then put the information into your own words. This way, you're being honest and respectful of others' work while still using ChatGPT to help you learn and create. Let's make sure we use ChatGPT responsibly and avoid plagiarism!",
+      text: "Plagiarism using ChatGPT is when someone copies and pastes the response they get from ChatGPT without giving credit to where the information came from. It's like taking someone else's work and pretending it's your own. This is not okay, because it's not honest or fair to the original creators of the information. ChatGPT's responses should be used as a inspiration for your own words. This way, you're being honest while using ChatGPT to help you learn.",
     },
     {
       type: 'quiz',
@@ -236,7 +236,7 @@ export const L2Content = {
             'Incorrect: Assuming something is true without verifying it can lead to misinformation being spread. Always double-check the information provided by ChatGPT.',
         },
         {
-          name: 'Cross-reference the information with reliable sources to ensure accuracy',
+          name: 'Cross-reference the information with reliable sources.',
           explanation:
             "Correct! Just as you would fact-check information from any source, it's important to confirm the information provided by ChatGPT with other reliable sources. This helps ensure accuracy and gives you a more complete understanding of the topic",
         },
