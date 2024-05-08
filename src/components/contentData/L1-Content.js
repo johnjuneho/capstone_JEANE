@@ -1,4 +1,13 @@
-const image1 = require('../images/text-content-placeholder.png');
+const image1 = require('../images/img9.jpg');
+const image2 = require('../images/img42.jpg');
+const image3 = require('../images/img31.jpg');
+const image4 = require('../images/img41.jpg');
+const image5 = require('../images/img36.jpg');
+const image6 = require('../images/img34.jpg');
+const image7 = require('../images/img40.jpg');
+const image8 = require('../images/img29.jpg');
+const image9 = require('../images/img39.jpg');
+const image10 = require('../images/img28.jpg');
 
 export const L1Content = {
   content: [
@@ -6,7 +15,7 @@ export const L1Content = {
       type: 'lecture',
       title: 'Objective 1: Asking Clearly',
       image: image1,
-      alt: 'A cartoon person training a dragon.',
+      alt: 'A cartoon dragon.',
       text: "Interacting with ChatGPT is a bit like giving directions to a robot. We have to be really clear and specific about where we want it to go and what we want it to do. Just like we wouldn't say 'go that way' to a robot without pointing, we can't just ask ChatGPT questions vaguely—we need to give specific instructions by choosing our words carefully!",
     },
     {
@@ -35,8 +44,8 @@ export const L1Content = {
     {
       type: 'lecture',
       title: 'Objective 2: Giving Good Details',
-      image: image1,
-      alt: 'A detective looking at clues.',
+      image: image2,
+      alt: 'A cartoon dragon.',
       text: "We need to be like detectives, providing all the clues so ChatGPT knows exactly what we're talking about. Some of the most important factors to remember when creating your prompt are to provide proper context and to be very specific. Just like with the robot, providing clear context and specific instructions ensures that Chat GPT generates relevant and useful responses tailored to your needs.",
     },
     {
@@ -65,13 +74,13 @@ export const L1Content = {
     {
       type: 'lecture',
       title: 'Objective 3: How Should We Talk to ChatGPT?',
-      image: image1, //placeholder
-      alt: 'Two people having a conversation.',
+      image: image3,
+      alt: 'A cartoon dragon.',
       text: "Using positive language helps focus the conversation and leads to better interactions with ChatGPT. It's like helping someone learn to skate by telling them to 'keep your balance' instead of not to fall.",
     },
     {
       type: 'quiz',
-      questionNumber: 3, // Added question number
+      questionNumber: 3,
       question:
         'When asking ChatGPT questions, should you use a positive or negative tone for describing what you want??',
       choices: [
@@ -91,8 +100,8 @@ export const L1Content = {
     {
       type: 'lecture',
       title: 'Objective 4: Understanding Politeness in Prompts',
-      image: image1,
-      alt: 'Two people having a conversation.',
+      image: image4,
+      alt: 'A cartoon dragon..',
       text: "While being polite (like using 'please' and 'thank you') is a good habit, our key focus should be on making your prompts to ChatGPT clear and to the point. Manners are great but not necessarily important in this setting, clarity is king!",
     },
     {
@@ -122,8 +131,8 @@ export const L1Content = {
     {
       type: 'lecture',
       title: 'Objective 5: Math Problem Prompts',
-      image: image1,
-      alt: 'A person teaching another person math.',
+      image: image5,
+      alt: 'A cartoon dragon..',
       text: 'Let’s discover how to ask ChatGPT for help with math in a way that boosts your learning. Instead of simply asking for the answer to math problems, we should be asking for explanations or step-by-step guides that help you understand the process. This will make sure that you get the help you need, while still learning!',
     },
     {
@@ -153,8 +162,8 @@ export const L1Content = {
     {
       type: 'lecture',
       title: "Objective 6: Recognizing AI's Math Abilities",
-      image: image1,
-      alt: 'A person and a robot solving a math problem together.',
+      image: image6,
+      alt: 'A cartoon dragon.',
       text: "We need to understand that while ChatGPT can handle basic math, it's not always correct, especially with complex problems. You should always be asking for explanations rather than just answers. This will enhance your learning and avoid relying on potentially incorrect solutions.",
     },
     {
@@ -183,8 +192,8 @@ export const L1Content = {
     {
       type: 'lecture',
       title: 'Objective 7: Using ChatGPT Wisely for English Assistance',
-      image: image1,
-      alt: 'A person receiving feedback on their writing from a robot.',
+      image: image7,
+      alt: 'A cartoon dragon.',
       text: 'Let’s talk about how to use ChatGPT effectively for English assignments without crossing ethical boundaries. There is a large difference between seeking constructive feedback and using AI to write for you. Not only can this be detected by software, but it is considered plagiarism.',
     },
     {
@@ -214,8 +223,8 @@ export const L1Content = {
     {
       type: 'lecture',
       title: 'Objective 8: Respecting Privacy with ChatGPT',
-      image: image1,
-      alt: 'A person asking a robot for advice.',
+      image: image8,
+      alt: 'A cartoon dragon.',
       text: 'Acknowledge the importance of respecting privacy when interacting with ChatGPT. Understand that asking for personal information about others is not only inappropriate but also breaches privacy laws and ethical standards.',
     },
     {
@@ -244,8 +253,8 @@ export const L1Content = {
     {
       type: 'lecture',
       title: 'Objective 9: Asking for Specific Advice',
-      image: image1,
-      alt: "A person cooking a meal with a robot's help.",
+      image: image9,
+      alt: 'A cartoon dragon.',
       text: 'So how should you be asking your questions to get the best advice from ChatGPT? As we have learned, being specific, like asking for further explanation on a specific step, results in better, more actionable results. Remember, clarity is king!',
     },
     {
@@ -275,8 +284,8 @@ export const L1Content = {
     {
       type: 'lecture',
       title: "Objective 10: Understanding ChatGPT's Limitations",
-      image: image1,
-      alt: 'A person contemplating a complex puzzle.',
+      image: image10,
+      alt: 'A cartoon dragon.',
       text: 'Lastly, we must understand that there are certain questions ChatGPT might not be able to answer, either due to their complexity or because they fall outside of its “knowledge.” We need to be able to recognize these limitations and adjust your expectations accordingly.',
     },
     {

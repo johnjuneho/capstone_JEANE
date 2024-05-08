@@ -31,7 +31,7 @@ export default function TextContent({
 
   return (
     <section className="lesson-container">
-      <img src={image} alt={alt} />
+      <img src={image} alt={alt} className="content-img" />
       <article className="lesson-heading">
         <h2>{title}</h2>
         <div className="lesson-text-container">
