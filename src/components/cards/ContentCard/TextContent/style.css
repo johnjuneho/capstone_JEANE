@@ -4,8 +4,7 @@
 .lesson-container {
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.1rem;
+  justify-content: flex-start;
   display: flex;
 }
 
@@ -29,6 +28,7 @@
   font-weight: 400;
   letter-spacing: 1.5px;
   word-wrap: break-word;
+  margin-bottom: 1rem;
 }
 
 .content-img {
@@ -42,17 +42,17 @@
   align-items: center;
   display: inline-flex;
   flex-direction: column;
+  overflow-y: auto;
+  max-height: 13.5rem;
 }
 
 .lesson-text {
-  width: 1017px;
   color: black;
   font-size: 25px;
   font-family: 'Averia Sans Libre';
   font-weight: 400;
   line-height: 40px;
   word-wrap: break-word;
-  margin: 0;
 }
 
 .divider {
