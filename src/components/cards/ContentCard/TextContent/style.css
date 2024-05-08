@@ -33,6 +33,7 @@
 
 .content-img {
   border-radius: 20px;
+  box-shadow: -7px 7px 0px #4e4e4e;
 }
 
 .lesson-text-container {
