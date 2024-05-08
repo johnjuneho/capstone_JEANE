@@ -31,18 +31,21 @@ export default function TextContent({
 
   return (
     <section className="lesson-container">
-      <img src={image} alt={alt} />
+      <img src={image} alt={alt} className="content-img" />
       <article className="lesson-heading">
         <h2>{title}</h2>
         <div className="lesson-text-container">
           <p className="lesson-text">{text}</p>
         </div>
       </article>
+      <div className="divider"></div>
       <section className="btn-nav">
         <button
           className="back-button"
           disabled={currSlide === 0}
-          onClick={() => onClickSlide(-1)}
+          onClick={() => {
+            onClickSlide(-1);
+          }}
         >
           <p className="next-text">Back</p>
         </button>

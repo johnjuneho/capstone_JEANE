@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.speech-bubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bubble {
+  position: relative;
+  z-index: 1;
+  height: 35rem;
+}
+
+.end-message {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-65%);
+  z-index: 2;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: 'Averia Sans Libre';
+  font-weight: 400;
+  line-height: 30px;
+  width: 48rem;
+}
+
+.end-message h2 {
+  line-height: 1;
+  font-size: 35px;
+}
+
+.dragon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+}

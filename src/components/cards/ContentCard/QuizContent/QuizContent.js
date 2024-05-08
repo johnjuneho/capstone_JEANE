@@ -16,7 +16,6 @@
 
 import { React, useState } from 'react';
 import Modal from 'react-modal';
-import ExplainPopup from '../ExplainPopup/ExplainPopup';
 import './style.css';
 
 export default function QuizContent({
@@ -70,7 +69,7 @@ export default function QuizContent({
         overlayClassName="custom-overlay"
         className="modal"
       >
-        <ExplainPopup choiceMsg={choiceMsg} closeModal={closeModal} />
+        <div></div>>
       </Modal>
       <div className="question-container">
         <h2 className="question-title">Question {questionNumber}</h2>
