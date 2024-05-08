@@ -22,7 +22,7 @@ export const IntroContent = {
       title: 'So what is AI?',
       image: image1,
       alt: 'A dragon image.',
-      text: 'Ai is like giving your computer a brain! Artificial Intelligence, aka “AI,” is all about programming computers to think, learn, and solve problems, kind of like how our brains work. Ai is like giving your computer a brain! Artificial Intelligence, aka “AI,” is all about programming computers to think, learn, and solve problems, kind of like how our brains work. Ai is like giving your computer a brain! Artificial Intelligence, aka “AI,” is all about programming computers to think, learn, and solve problems, kind of like how our brains work.',
+      text: 'Ai is like giving your computer a brain! Artificial Intelligence, aka “AI,” is all about programming computers to think, learn, and solve problems, kind of like how our brains work.',
     },
     {
       type: 'lecture',
