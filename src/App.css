@@ -4,6 +4,7 @@
 body {
   background-color: #aad8b1;
   overflow: hidden;
+  zoom: 0.81;
 }
 
 .home-dashboard {
@@ -16,27 +17,15 @@ body {
 }
 
 .container {
-  height: 65px;
+  height: 4.05rem;
   position: relative;
   width: 100%;
-}
-
-.container-2 {
-  height: 65px;
-}
-
-.header {
-  align-items: center;
-  display: inline-flex;
-  gap: 32px;
-  justify-content: center;
-  position: relative;
 }
 
 .content {
   align-items: flex-start;
   display: flex;
-  gap: 57px;
+  gap: 3.6rem;
   position: relative;
   margin-left: 1rem;
   margin-right: 2rem;
@@ -52,29 +41,8 @@ body {
   padding: 2.6rem 2.6rem 2.6rem 2.6rem;
 }
 
-.container {
-  height: 4.0625rem;
-  position: relative;
-  width: 100%;
-}
-
 .container-2 {
   height: 4.0625rem;
-}
-
-.header {
-  align-items: center;
-  display: inline-flex;
-  gap: 2rem;
-  justify-content: center;
-  position: relative;
-}
-
-.content {
-  align-items: flex-start;
-  display: flex;
-  position: relative;
-  margin-right: 3.5625rem;
 }
 
 .menu,
