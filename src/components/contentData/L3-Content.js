@@ -41,7 +41,7 @@ export const L3Content = {
       title: 'Objective 1: Understanding How ChatGPT Works',
       image: image4,
       alt: 'A cartoon person training a dragon.',
-      text: "Let's Talk About How AI Thinks and Learns: Imagine you have a smart robot. You can ask it anything, and it tries its best to give you the right answer. But how does it know what to say? AI, like our robot, learns from reading lots and lots of books, articles, and websites. The more it reads, the smarter it gets. However, it doesn't understand things like a human does—it remembers patterns in the words it has seen and uses those patterns to guess the best answer to your questions.",
+      text: "Imagine you have a smart robot. You can ask it anything, and it tries its best to give you the right answer. But how does it know what to say? AI, like our robot, learns from reading lots and lots of books, articles, and websites. The more it reads, the smarter it gets. However, it doesn't understand things like a human does—it remembers patterns in the words it has seen and uses those patterns to guess the best answer to your questions.",
     },
     {
       type: 'lecture',

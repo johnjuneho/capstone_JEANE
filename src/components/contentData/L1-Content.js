@@ -99,31 +99,31 @@ export const L1Content = {
     },
     {
       type: 'lecture',
-      title: 'Objective 4: Understanding Politeness in Prompts',
+      title: 'Objective 4: Understanding The Potential of AI',
       image: image4,
       alt: 'A cartoon dragon..',
-      text: "While being polite (like using 'please' and 'thank you') is a good habit, our key focus should be on making your prompts to ChatGPT clear and to the point. Manners are great but not necessarily important in this setting, clarity is king!",
+      text: "Imagine a super-cool robot friend who can draw amazing pictures, compose music like a rock star, write awesome stories, and even play games with you! Artificial Intelligence is like having a genie who’s great at everything from choreographing dances to solving math problems. Whether you want a picture of a skateboarding dinosaur, a song to match your mood, or a little help with science, AI is your go-to for creating, learning, and having fun!",
     },
     {
       type: 'quiz',
       questionNumber: 4,
       question:
-        'Should I be polite and use please/thank you when talking to ChatGPT?',
+        'What is something that AI can NOT do?',
       choices: [
         {
-          name: 'Yes',
+          name: 'Compose Music',
           explanation:
-            "Not quite... While being polite is great in social situations, ChatGPT doesn't need politeness to understand or respond to your requests. It's like programming a computer; the code doesn't need 'please' to run.",
+            "Not quite... ChatGPT and other AI systems can help you write lyrics and compose your own song!",
         },
         {
-          name: 'No',
+          name: 'Choreograph a dance routine',
           explanation:
-            "Not quite... This isn't exactly wrong. Politeness is a good habit, but clarity is what really helps ChatGPT help you.",
+            "Not quite... With the proper wording, ChatGPT and other AI systems can help you choreograph an amazing dance routine!",
         },
         {
-          name: "It doesn't matter",
+          name: "Turn you into a dragon",
           explanation:
-            " Correct! Imagine texting a friend. You don't need to say 'please' or 'thank you' for them to understand, but it's nice, right? Same with ChatGPT. Manners are cool, but clarity is key. Just like in texts, getting straight to the point often works best.",
+            "Correct! Artificial Intelligence has many capabilities and is often extremely smart, but it cannot turn you into a dragon.",
         },
       ],
       answerIndex: 2,
