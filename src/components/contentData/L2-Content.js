@@ -3,13 +3,13 @@
  * Includes lecture images and text, quiz options, and end slide content.
  */
 
-const image1 = require('../images/img38.jpg');
+const image1 = require('../images/img46.jpg');
 const image2 = require('../images/img24.jpg');
 const image3 = require('../images/img37.jpg');
 const image4 = require('../images/img27.jpg');
 const image5 = require('../images/img30.jpg');
 const image6 = require('../images/img25.jpg');
-const image7 = require('../images/img26.jpg');
+const image7 = require('../images/img49.jpg');
 
 export const L2Content = {
   content: [

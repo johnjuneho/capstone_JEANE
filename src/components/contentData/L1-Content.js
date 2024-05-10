@@ -1,13 +1,13 @@
 const image1 = require('../images/img9.jpg');
-const image2 = require('../images/img42.jpg');
+const image2 = require('../images/img45.jpg');
 const image3 = require('../images/img31.jpg');
 const image4 = require('../images/img41.jpg');
 const image5 = require('../images/img36.jpg');
-const image6 = require('../images/img34.jpg');
+const image6 = require('../images/img4.jpg');
 const image7 = require('../images/img40.jpg');
-const image8 = require('../images/img29.jpg');
+const image8 = require('../images/img52.jpg');
 const image9 = require('../images/img39.jpg');
-const image10 = require('../images/img28.jpg');
+const image10 = require('../images/img33.jpg');
 
 export const L1Content = {
   content: [
@@ -26,7 +26,7 @@ export const L1Content = {
         {
           name: 'Specificity - how specific the prompt is',
           explanation:
-            "Correct! Think of asking ChatGPT a question like searching for a hidden treasure. If your map (the question) is super detailed, you're way more likely to find the gold (the answer you need). Specific questions lead you straight to the treasure!",
+            "Correct:  Think of asking ChatGPT a question like searching for a hidden treasure. If your map (the question) is super detailed, you're way more likely to find the gold (the answer you need). Specific questions lead you straight to the treasure!",
         },
         {
           name: 'Politeness - how polite the prompt is',
@@ -102,28 +102,27 @@ export const L1Content = {
       title: 'Objective 4: Understanding The Potential of AI',
       image: image4,
       alt: 'A cartoon dragon..',
-      text: "Imagine a super-cool robot friend who can draw amazing pictures, compose music like a rock star, write awesome stories, and even play games with you! Artificial Intelligence is like having a genie who’s great at everything from choreographing dances to solving math problems. Whether you want a picture of a skateboarding dinosaur, a song to match your mood, or a little help with science, AI is your go-to for creating, learning, and having fun!",
+      text: 'Imagine a super-cool robot friend who can draw amazing pictures, compose music like a rock star, write awesome stories, and even play games with you! Artificial Intelligence is like having a genie who’s great at everything from choreographing dances to solving math problems. Whether you want a picture of a skateboarding dinosaur, a song to match your mood, or a little help with science, AI is your go-to for creating, learning, and having fun!',
     },
     {
       type: 'quiz',
       questionNumber: 4,
-      question:
-        'What is something that AI can NOT do?',
+      question: 'What is something that AI can NOT do?',
       choices: [
         {
           name: 'Compose Music',
           explanation:
-            "Not quite... ChatGPT and other AI systems can help you write lyrics and compose your own song!",
+            'Not quite... ChatGPT and other AI systems can help you write lyrics and compose your own song!',
         },
         {
           name: 'Choreograph a dance routine',
           explanation:
-            "Not quite... With the proper wording, ChatGPT and other AI systems can help you choreograph an amazing dance routine!",
+            'Not quite... With the proper wording, ChatGPT and other AI systems can help you choreograph an amazing dance routine!',
         },
         {
-          name: "Turn you into a dragon",
+          name: 'Turn you into a dragon',
           explanation:
-            "Correct! Artificial Intelligence has many capabilities and is often extremely smart, but it cannot turn you into a dragon.",
+            'Correct! Artificial Intelligence has many capabilities and is often extremely smart, but it cannot turn you into a dragon.',
         },
       ],
       answerIndex: 2,
