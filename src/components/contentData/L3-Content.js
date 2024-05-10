@@ -330,8 +330,9 @@ export const L3Content = {
     },
     {
       type: 'end',
-      lessonTitle: 'Lesson3',
-      message: 'Congrats! You have finished the curriculum!',
+      lessonTitle: 'Lesson3: Ethics of AI Closing Thoughts',
+      message:
+        "Congratulations on completing the curriculum! Throughout this journey, you've flown through the depths of artificial intelligence, mastered the art of engaging with it, and explored the ethics of ChatGPT. With a wealth of knowledge under your belt, you're now equipped to embark on your own academic adventures, ready to conquer new challenges that lie ahead. Wishing you the best of luck in your future journey!",
     },
   ],
 };
