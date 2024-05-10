@@ -18,8 +18,16 @@ export const L3Content = {
       image: image1,
       alt: 'A cartoon person training a dragon.',
       //will edit text bc too long
-      text: "Imagine embarking on a thrilling journey not with dragons, but with something equally powerful and mysterious—artificial intelligence (AI). Just as the young Viking, Hiccup, discovered the world of dragons and learned to interact with them, you too will explore the capabilities of AI technologies like ChatGPT. In this journey, the dragons represent the powerful AI systems that, when understood and used correctly, can become valuable allies.",
-    },
+      text: "Imagine embarking on a thrilling journey not with dragons, but with something equally powerful and mysterious—artificial intelligence (AI). Just as a young Viking discovered the world of dragons and learned to interact with them, you too will explore the capabilities of AI technologies like ChatGPT. In this journey, the dragons represent the powerful AI systems that, when understood and used correctly, can become valuable allies. But beware, just like how dragons can be unpredictable and require careful handling, AI also comes with its own set of challenges and ethical considerations like risks of misinformation, bias, and ethical dilemmas that come with it. To safely navigate this jungle and unearth its treasures, you need more than just a map; you need to understand the terrain, the climate, and the rules of the jungle.",
+    }, 
+    {
+      type: 'lecture',
+      title: 'Lesson 3: Introduction',
+      image: image1,
+      alt: 'A cartoon person training a dragon.',
+      //will edit text bc too long
+      text: "This lesson will equip you with the knowledge to distinguish between valuable and accurate information and the dangerous pitfalls of misleading data. It teaches you to tread carefully and use the tools responsibly. With this guidebook, you're set for an adventure in the jungle of AI and dragons, ready to explore its wonders while avoiding its traps.",
+    }, 
     {
       type: 'lecture',
       title: 'Lesson 3: Introduction',
@@ -30,18 +38,10 @@ export const L3Content = {
     },
     {
       type: 'lecture',
-      title: 'Lesson 3: Introduction',
-      image: image3,
-      alt: 'A cartoon person training a dragon.',
-      //will edit text bc too long
-      text: "Understanding AI ethics is like having that essential guidebook to understand all of the different types of dragons. It equips you with the knowledge to distinguish between the valuable and accurate information and the dangerous pitfalls of misleading data. It teaches you to tread carefully, question your path, and use the tools at your disposal responsibly. With this guidebook in hand, you're set for an adventure in the jungle of AI and dragons, ready to explore its wonders while avoiding its traps.",
-    },
-    {
-      type: 'lecture',
       title: 'Objective 1: Understanding How ChatGPT Works',
       image: image4,
       alt: 'A cartoon person training a dragon.',
-      text: "Imagine you have a smart robot. You can ask it anything, and it tries its best to give you the right answer. But how does it know what to say? AI, like our robot, learns from reading lots and lots of books, articles, and websites. The more it reads, the smarter it gets. However, it doesn't understand things like a human does—it remembers patterns in the words it has seen and uses those patterns to guess the best answer to your questions.",
+      text: "Imagine you have a smart robot. You can ask it anything, and it tries its best to give you the right answer. But how does it know what to say? AI, like our robot, learns from reading lots and lots of books, articles, and websites. The more it reads, the smarter it gets. However, it doesn't understand things like a human does—it remembers patterns in the words it has seen and uses those patterns to guess the best answer to your questions. AI is not good at understanding feelings or making moral decisions like humans can. Knowing this helps us decide when to use AI (like for homework help) and when to rely on human judgment (like asking for advice on a personal problem) to avoid misinformation.",
     },
     {
       type: 'lecture',
