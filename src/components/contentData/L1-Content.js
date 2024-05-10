@@ -26,7 +26,7 @@ export const L1Content = {
         {
           name: 'Specificity - how specific the prompt is',
           explanation:
-            "Correct:  Think of asking ChatGPT a question like searching for a hidden treasure. If your map (the question) is super detailed, you're way more likely to find the gold (the answer you need). Specific questions lead you straight to the treasure!",
+            "Correct! Think of asking ChatGPT a question like searching for a hidden treasure. If your map (the question) is super detailed, you're way more likely to find the gold (the answer you need). Specific questions lead you straight to the treasure!",
         },
         {
           name: 'Politeness - how polite the prompt is',

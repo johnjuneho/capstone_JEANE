@@ -1,5 +1,5 @@
 /**
- * This component represents the second lesson of the application.
+ * This component represents the first lesson of the application.
  *
  * It includes the following functionalities:
  * - Rendering of the lesson content based on the current slide (lecture, quiz, or end screen).
@@ -12,6 +12,7 @@ import React, { useState } from 'react';
 import HomeLogo from '../../cards/HomeLogo/HomeLogo';
 import MenuCard from '../../cards/MenuCard/MenuCard';
 import QuizContent from '../../cards/ContentCard/QuizContent/QuizContent';
+import AnswerContent from '../../cards/ContentCard/QuizContent/AnswerContent'; 
 import EndScreen from '../../cards/ContentCard/EndScreen/EndScreen';
 import { L3Content } from '../../contentData/L3-Content';
 import TextContent from '../../cards/ContentCard/TextContent/TextContent';
@@ -20,6 +21,7 @@ import '../../../App.css';
 export default function Lesson3() {
   const content = L3Content.content;
   const [currSlide, setCurrSlide] = useState(0);
+  const [showAnswer, setShowAnswer] = useState(false); 
 
   /**
    * Function to change the current slide.
@@ -27,40 +29,70 @@ export default function Lesson3() {
    */
   const slideChange = (newSlide) => {
     setCurrSlide(newSlide);
+    setShowAnswer(false); 
   };
 
   let cardContent;
   let contentComponent;
   let contentType = content[currSlide].type;
 
-  if (contentType === 'lecture') {
-    const { type, title, image, alt, text } = content[currSlide];
-    cardContent = { type, title, image, alt, text };
-    contentComponent = (
-      <TextContent
-        cardContent={cardContent}
-        currSlide={currSlide}
-        totalLength={content.length}
-        slideChange={slideChange}
-      />
-    );
-  } else if (contentType === 'quiz') {
-    const { type, question, choices, answer } = content[currSlide];
-    contentType = 'quiz';
-    cardContent = { type, question, choices, answer };
-    contentComponent = (
-      <QuizContent
-        cardContent={cardContent}
-        currSlide={currSlide}
-        totalLength={content.length}
-        slideChange={slideChange}
-      />
-    );
-  } else if (contentType === 'end') {
-    const { lessonTitle, message } = content[currSlide];
-    contentComponent = (
-      <EndScreen lessonTitle={lessonTitle} message={message} />
-    );
+  switch (contentType) {
+    case 'lecture':
+      const { type, title, image, alt, text } = content[currSlide];
+      cardContent = { type, title, image, alt, text };
+      contentComponent = (
+        <TextContent
+          cardContent={cardContent}
+          currSlide={currSlide}
+          totalLength={content.length}
+          slideChange={slideChange}
+        />
+      );
+      break;
+    case 'quiz':
+      const {
+        type: quizType,
+        questionNumber,
+        question,
+        choices,
+        answerIndex,
+      } = content[currSlide];
+      cardContent = {
+        type: quizType,
+        questionNumber,
+        question,
+        choices,
+        answerIndex,
+      };
+      if (!showAnswer) {
+        contentComponent = (
+          <QuizContent
+            cardContent={cardContent}
+            currSlide={currSlide}
+            totalLength={content.length}
+            slideChange={() => setShowAnswer(true)} 
+          />
+        );
+      } else {
+        contentComponent = (
+          <AnswerContent
+            userAnswer={choices[answerIndex].name}
+            isCorrect={true} 
+            explanation={choices[answerIndex].explanation}
+            onNext={() => slideChange(currSlide + 1)}
+            onBack={() => setShowAnswer(false)}
+          />
+        );
+      }
+      break;
+    case 'end':
+      const { lessonTitle, message } = content[currSlide];
+      contentComponent = (
+        <EndScreen lessonTitle={lessonTitle} message={message} />
+      );
+      break;
+    default:
+      contentComponent = null;
   }
 
   return (
@@ -83,3 +115,4 @@ export default function Lesson3() {
     </div>
   );
 }
+

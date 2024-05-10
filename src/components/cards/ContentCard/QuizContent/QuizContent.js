@@ -14,8 +14,9 @@
  * @returns {JSX.Element} The rendered QuizContent component.
  */
 
-import { React, useState } from 'react';
+import React, { useState } from 'react';
 import Modal from 'react-modal';
+import AnswerContent from './AnswerContent';  
 import './style.css';
 
 export default function QuizContent({
@@ -26,51 +27,40 @@ export default function QuizContent({
 }) {
   const { questionNumber, question, choices, answerIndex } = cardContent;
   const [choiceIdx, setChoiceIdx] = useState(null);
-  const [answer, setAnswer] = useState(null);
-  const [modalIsOpen, setIsOpen] = useState(false);
-  let choiceMsg;
+  const [showAnswer, setShowAnswer] = useState(false);  
 
-  function closeModal() {
-    setIsOpen(false);
-    document.querySelector('.quiz-container').classList.remove('hidden');
-  }
-
-  /**
-   * Handle when a choice is clicked.
-   * @param {Object} choice The choice object.
-   * @param {number} index The index of the choice in the choices array.
-   */
   const onChoiceClick = (choice, index) => {
-    choiceMsg = choice.explanation;
     setChoiceIdx(index);
-    document.querySelector('.quiz-container').classList.add('hidden');
-    if (index === answerIndex) {
-      setAnswer(true);
-    } else {
-      setAnswer(false);
-    }
-    setIsOpen(true);
+    setShowAnswer(true);  
   };
 
-  /**
-   * Handle when next/back buttons are clicked.
-   * @param {number} idx The index increment for the next/back action.
-   */
-  const onClickSlide = (idx) => {
-    setChoiceIdx(null);
-    slideChange(currSlide + idx);
+  const onNext = () => {
+    setShowAnswer(false);
+    slideChange(currSlide + 1);
   };
+
+  const onBackToQuestion = () => {
+    setShowAnswer(false);
+  };
+
+  const onGoBack = () => {
+    if (currSlide > 0) {
+      slideChange(currSlide - 1);
+    }
+  };
+
+  if (showAnswer) {
+    return <AnswerContent
+      userAnswer={choices[choiceIdx].name}
+      isCorrect={choiceIdx === answerIndex}
+      explanation={choices[choiceIdx].explanation}
+      onNext={onNext}
+      onBack={onBackToQuestion}
+    />;
+  }
 
   return (
     <section className="quiz-container">
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        overlayClassName="custom-overlay"
-        className="modal"
-      >
-        <div></div>>
-      </Modal>
       <div className="question-container">
         <h2 className="question-title">Question {questionNumber}</h2>
         <p className="question-text">{question}</p>
@@ -78,9 +68,7 @@ export default function QuizContent({
       {choices.map((choice, index) => (
         <button
           key={index}
-          className={`answer-container ${
-            choiceIdx === index ? 'selected-ans' : ''
-          }`}
+          className={`answer-container ${choiceIdx === index ? 'selected-ans' : ''}`}
           onClick={() => onChoiceClick(choice, index)}
         >
           <div className="answer-text">
@@ -91,10 +79,7 @@ export default function QuizContent({
       <section className="btn-nav">
         <button
           className="back-button"
-          disabled={currSlide === 0}
-          onClick={() => {
-            onClickSlide(-1);
-          }}
+          onClick={onGoBack}
         >
           <p className="next-text">Back</p>
         </button>
@@ -102,11 +87,7 @@ export default function QuizContent({
           <span className="active-q">{currSlide + 1}</span>
           <span className="total-q">/{totalLength}</span>
         </div>
-        <button className="next-button" onClick={() => onClickSlide(1)}>
-          <p className="next-text">
-            {currSlide === totalLength - 1 ? 'Finish' : 'Next'}
-          </p>
-        </button>
+        {/* Next button is conditionally rendered in AnswerContent instead */}
       </section>
     </section>
   );

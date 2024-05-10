@@ -12,7 +12,7 @@ export default function ExplainPopup({ message, lessonTitle }) {
         />
         <div className="end-message">
           <h2>{lessonTitle}</h2>
-          <p className="explanation">{message}</p>
+          <p className="explanation2">{message}</p>
         </div>
       </div>
       <img

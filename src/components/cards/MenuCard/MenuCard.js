@@ -70,12 +70,6 @@ function addIcon(className, pageName) {
       } else {
         return <Overview />;
       }
-    case 'Settings':
-      if (pageName === className) {
-        return <SettingsFill />;
-      } else {
-        return <Settings />;
-      }
     case 'Introduction':
       if (pageName === className) {
         return <StarFill />;

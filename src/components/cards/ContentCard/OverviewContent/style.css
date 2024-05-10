@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 .overview-card {
@@ -145,4 +145,84 @@
   margin-top: 1px;
   position: relative;
   width: fit-content;
+} */
+
+.begin-text {
+  color: black;
+  font-size: 25px;
+  font-family: 'Averia Sans Libre';
+  font-weight: 400;
+  line-height: 40px;
+  word-wrap: break-word;
 }
+
+.overview-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  padding: 1em;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.lesson-container {
+  text-align: center;
+  padding: 0;
+}
+
+.lesson-title {
+  width: 100%;
+  color: #3b2b23;
+  font-size: 50px;
+  font-family: 'Germania One';
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  word-wrap: break-word;
+  margin-bottom: 1rem;
+}
+
+.lesson-image {
+    border-radius: 20px;
+    box-shadow: -7px 7px 0px #4e4e4e;
+}
+
+.lesson-summary {
+  color: black;
+  font-size: 20px;
+  font-family: 'Averia Sans Libre';
+  font-weight: 400;
+  line-height: 40px;
+  word-wrap: break-word;
+}
+
+.begin-button {
+  align-items: center;
+  background-color: #ffbe5d;
+  border: 3px solid;
+  border-color: #000000;
+  border-radius: 20px;
+  box-shadow: -4px 4px 0px #4f4f4f;
+  box-sizing: border-box;
+  gap: 10px;
+  overflow: hidden;
+  padding: 14px 26px;
+  position: relative;
+  width: 150px;
+  font-weight: 400;
+  height: 60px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  display: flex;
+  justify-content: center;
+}
+
+.begin-button:hover {
+  background-color: #fcaf3b;
+}
+
+
+
