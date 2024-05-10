@@ -1,35 +1,3 @@
-// import React from 'react';
-// import ProgressOverview from './ProgressOverview/ProgressOverview';
-// import profile from '../../../images/profilepic.png';
-// import './style.css';
-
-// export default function OverviewContent() {
-//   return (
-//     <div className="overview-card">
-//       <div className="outline">
-//         <section className="outline-frame">
-//           <div className="profile">
-//             <div className="group">
-//               <div className="overlap-group">
-//                 <div className="profile-outline" />
-//                 <img className="img" alt="Ellipse" src={profile} />
-//               </div>
-//             </div>
-//             <div className="name">
-//               <p className="name-label">Sarah Yu</p>
-//               <p className="grade-label">7th Grade Student</p>
-//             </div>
-//           </div>
-//         </section>
-//         <section className="progress">
-//           <p className="progress-overview">Progress Overview</p>
-//           <ProgressOverview />
-//         </section>
-//       </div>
-//     </div>
-//   );
-// }
-
 /*
  * This component renders the a lesson slide that features and image, title, and paragraph.
  *
@@ -49,30 +17,26 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
-import image from '../../../images/img13.jpg'
+import image from '../../../images/img13.jpg';
 
 export default function OverviewContent() {
   const navigate = useNavigate();
-  
+
   const lessonInfo = {
-    title: "Welcome to How to Train your ChatBot!",
-    text: "Welcome to our app! As young users increasingly encounter artificial intelligence through social media, the need for proper digital literacy has never been clearer. Our application is designed to equip students with the knowledge and skills to use AI platforms like ChatGPT responsibly and ethically. Through a series of engaging, gamified lessons, students will explore essential topics such as the basics of AI, prompt engineering, and the ethics of digital interactions. Click Begin to start! "
+    title: 'Welcome to How to Train your ChatBot!',
+    text: 'Welcome! In recent years, artificial intelligence has skyrocketed in popularity, revolutionizing how people access information. As students turn to social media to learn how to use platforms like ChatGPT, the need for improved digital literacy has never been clearer. Our website is here to provide training about using AI platforms responsibly and ethically. Over the course of three lessons, students will fly through the basics of AI, discover how to talk to it (prompt engineer), and explore the clouds of AI ethics. If you are ready to train your chatbot, click Begin to start! ',
   };
 
   return (
     <div className="overview-card">
       <div className="lesson-container">
         <h1 className="lesson-title">{lessonInfo.title}</h1>
-        <img src={image} alt="Lesson Visual" className="lesson-image"/>
+        <img src={image} alt="Lesson Visual" className="lesson-image" />
         <p className="lesson-summary">{lessonInfo.text}</p>
         <button className="begin-button" onClick={() => navigate('/intro')}>
-          <div className="begin-text">
-            Begin
-          </div>
+          <div className="begin-text">Begin</div>
         </button>
-    </div>
+      </div>
     </div>
   );
 }
-
-
