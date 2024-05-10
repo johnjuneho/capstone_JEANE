@@ -21,21 +21,14 @@ export const L3Content = {
       title: 'Lesson 3: Introduction',
       image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: 'Imagine embarking on a thrilling journey not with dragons, but with something equally powerful and mysterious—artificial intelligence (AI). Just as the young Viking, Hiccup, discovered the world of dragons and learned to interact with them, you too will explore the capabilities of AI technologies like ChatGPT. In this journey, the dragons represent the powerful AI systems that, when understood and used correctly, can become valuable allies.',
+      text: 'Imagine embarking on a thrilling journey not with dragons, but with something equally powerful and mysterious—artificial intelligence (AI). Just as a young Viking discovered the world of dragons and learned to interact with them, you too will explore the capabilities of AI technologies like ChatGPT. In this journey, the dragons represent the powerful AI systems that, when understood and used correctly, can become valuable allies.',
     },
     {
       type: 'lecture',
       title: 'Lesson 3: Introduction',
-      image: image2,
+      image: image1,
       alt: 'A cartoon person training a dragon.',
-      text: 'But beware, just as dragons can be unpredictable and require careful handling, AI also comes with its own set of challenges and ethical considerations like risks of misinformation, bias, and ethical dilemmas that come with it. To safely navigate this jungle and unearth its treasures, you need more than just a map; you need to understand the terrain, the climate, and the rules of the jungle.',
-    },
-    {
-      type: 'lecture',
-      title: 'Lesson 3: Introduction',
-      image: image10,
-      alt: 'A cartoon person training a dragon.',
-      text: "Understanding AI ethics is like having that essential guidebook to understand all of the different types of dragons. It equips you with the knowledge to distinguish between the valuable and accurate information and the dangerous pitfalls of misleading data. It teaches you to tread carefully, question your path, and use the tools at your disposal responsibly. With this guidebook in hand, you're set for an adventure in the jungle of AI and dragons, ready to explore its wonders while avoiding its traps.",
+      text: 'Beware, just like how dragons can be unpredictable and require careful handling, AI also comes with its own set of challenges and ethical considerations like risks of misinformation, bias, and ethical dilemmas that come with it. To safely navigate this jungle and unearth its treasures, you need more than just a map; to equip you with the knowledge to distinguish between valuable and accurate information and the dangerous pitfalls of misleading data. With this guidebook, you are set for an adventure in the jungle of AI and dragons, ready to explore its wonders while avoiding its traps.',
     },
     {
       type: 'lecture',
@@ -80,14 +73,14 @@ export const L3Content = {
       title: 'Objective 2: Recognizing AI Limitations and Risks',
       image: image9,
       alt: '',
-      text: "Even though AI can be super helpful, it has its limits. Imagine you're playing a video game, but sometimes the game glitches. AI can glitch in a way, too. For example, it might give you wrong information if it has learned from incorrect data. Just like you can't fly a dragon into a storm, you shouldn't rely on AI for everything without double-checking its answers.",
+      text: "AI Isn't Perfect. Even though AI can be super helpful, it has its limits. Imagine you're playing a video game, but sometimes the game glitches. AI can glitch in a way, too. For example, it might give you wrong information if it has learned from incorrect data. Just like you can't fly a dragon into a storm, you shouldn't rely on AI for everything without double-checking its answers.",
     },
     {
       type: 'lecture',
       title: 'Objective 2: Recognizing AI Limitations and Risks',
       image: image6,
       alt: '',
-      text: "It's important to remember that AI is just one tool in our toolkit. We need to use other tools as well, like books, asking teachers, or talking to friends, to make sure we understand the full picture. When there comes a time where you need to showcase your skills without the support of AI, you may not know how to solve the problem if you don’t try to learn each step.This helps us avoid mistakes and learn better.",
+      text: "It's important to remember that AI is just one tool in our toolkit. We need to use other tools as well, like books, asking teachers, or talking to friends, to make sure we understand the full picture. When there comes a time where you need to showcase your skills without the support of AI, you may not know how to solve the problem if you don’t try to learn each step. This helps us avoid mistakes and learn better.",
     },
     {
       type: 'quiz',
@@ -195,7 +188,14 @@ export const L3Content = {
       title: 'Objective 4: Impact of Biased Responses',
       image: image3,
       alt: '',
-      text: "When AI becomes biased, it will have stereotypes and misconceptions which can lead to a narrow view of topics, limiting exposure to a different ideas and opinions. It's like hearing the same mistaken story over and over—eventually, you might start believing it's true, even if it's not. Understanding these impacts helps us remain critical of the information provided by AI, ensuring we seek out diverse sources and viewpoints to get a more complete and accurate picture.",
+      text: "Once we identify biases in AI responses, it's crucial to recognize how these biases can affect the information we receive. Biased AI can present information that leans a certain way, much like a crooked picture frame alters the view of a photograph. This skewed perspective can lead us to make decisions based on incomplete or inaccurate information.",
+    },
+    {
+      type: 'lecture',
+      title: 'Objective 4: Impact of Biased Responses',
+      image: image3,
+      alt: '',
+      text: "When AI repeatedly presents biased views, it can reinforce stereotypes and misconceptions. Bias in AI can lead to less exposure to different ideas and opinions. It's like hearing the same mistaken story over and over—eventually, you might start believing it's true, even if it's not. Understanding these impacts helps us remain objective of the information provided by AI, ensuring we fact check and hear other perspectives to get a more complete and accurate picture.",
     },
     {
       type: 'quiz',
@@ -279,7 +279,7 @@ export const L3Content = {
       title: 'Objective 6: Practical Tips for Ethical and Effective AI Use',
       image: image1,
       alt: '',
-      text: "Think of AI like a partner in a school project. It can give you ideas and help you understand things better, but it's up to you to put the pieces together and create your own work. This means taking the ideas AI gives you, adding your own thoughts, and making something new. It's important to look at different sides of a story to get the full pictur and learn on your own. This helps you become a better thinker and keeps your mind sharp for solving all kinds of puzzles.",
+      text: "Think of AI like a partner in a school project. It can give you ideas and help you understand things better, but it's up to you to put the pieces together and create your own work. This means taking the ideas AI gives you, adding your own thoughts, and making something new. It's important to look at different sides of a story to get the full picture and learn on your own. This helps you become a better thinker and keeps your mind sharp for solving all kinds of puzzles.",
     },
     {
       type: 'quiz',
@@ -329,8 +329,16 @@ export const L3Content = {
       answerIndex: 2,
     },
     {
+      type: 'lecture',
+      title: 'Lesson 3: Ethics of AI Closing Thoughts',
+      image: image1,
+      alt: '',
+      text:
+        "Understanding how ChatGPT and AI work is like having a flashlight in the dark. It helps us find our way through lots of information and avoid believing things that aren't true. But we also need to think about how we use AI ethically. That means not relying too much on it, knowing its limits, and being honest when we use it. We should use AI to get ideas but not copy everything it says. Too much AI can make us lazy thinkers, so it's important to balance how much we use it. By being careful with AI, we can make sure we're not spreading false information or treating people unfairly.",
+    },
+    {
       type: 'end',
-      lessonTitle: 'Lesson3: Ethics of AI Closing Thoughts',
+      lessonTitle: 'Lesson 3: Ethics of AI Closing Thoughts',
       message:
         "Congratulations on completing the curriculum! Throughout this journey, you've flown through the depths of artificial intelligence, mastered the art of engaging with it, and explored the ethics of ChatGPT. With a wealth of knowledge under your belt, you're now equipped to embark on your own academic adventures, ready to conquer new challenges that lie ahead. Wishing you the best of luck in your future journey!",
     },
