@@ -23,7 +23,7 @@ export default function OverviewContent() {
   const navigate = useNavigate();
 
   const lessonInfo = {
-    title: 'Welcome to How to Train your ChatBot!',
+    title: 'Welcome to How to Train Your ChatBot!',
     text: 'Welcome! In recent years, artificial intelligence has skyrocketed in popularity, revolutionizing how people access information. As students turn to social media to learn how to use platforms like ChatGPT, the need for improved digital literacy has never been clearer. Our website is here to provide training about using AI platforms responsibly and ethically. Over the course of three lessons, students will fly through the basics of AI, discover how to talk to it (prompt engineer), and explore the clouds of AI ethics. If you are ready to train your chatbot, click Begin to start! ',
   };
 
