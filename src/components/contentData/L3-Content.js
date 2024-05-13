@@ -13,6 +13,7 @@ const image7 = require('../images/img55.jpg');
 const image8 = require('../images/img53.jpg');
 const image9 = require('../images/img16.jpg');
 const image10 = require('../images/img51.jpg');
+const image11 = require('../images/l3-end.jpg');
 
 export const L3Content = {
   content: [
@@ -26,7 +27,7 @@ export const L3Content = {
     {
       type: 'lecture',
       title: 'Lesson 3: Introduction',
-      image: image1,
+      image: image2,
       alt: 'A cartoon person training a dragon.',
       text: 'Beware, just like how dragons can be unpredictable and require careful handling, AI also comes with its own set of challenges and ethical considerations like risks of misinformation, bias, and ethical dilemmas that come with it. To safely navigate this jungle and unearth its treasures, you need more than just a map; to equip you with the knowledge to distinguish between valuable and accurate information and the dangerous pitfalls of misleading data. With this guidebook, you are set for an adventure in the jungle of AI and dragons, ready to explore its wonders while avoiding its traps.',
     },
@@ -193,7 +194,7 @@ export const L3Content = {
     {
       type: 'lecture',
       title: 'Objective 4: Impact of Biased Responses',
-      image: image3,
+      image: image10,
       alt: '',
       text: "When AI repeatedly presents biased views, it can reinforce stereotypes and misconceptions. Bias in AI can lead to less exposure to different ideas and opinions. It's like hearing the same mistaken story over and over—eventually, you might start believing it's true, even if it's not. Understanding these impacts helps us remain objective of the information provided by AI, ensuring we fact check and hear other perspectives to get a more complete and accurate picture.",
     },
@@ -338,7 +339,7 @@ export const L3Content = {
     {
       type: 'end',
       endTitle: 'Lesson 3: Ethics of AI Closing Thoughts',
-      endImage: image1,
+      endImage: image11,
       endAlt: '',
       endText:
         "Congratulations on completing the curriculum! Throughout this journey, you've flown through the depths of artificial intelligence, mastered the art of engaging with it, and explored the ethics of ChatGPT. With a wealth of knowledge under your belt, you're now equipped to embark on your own academic adventures, ready to conquer new challenges that lie ahead. Wishing you the best of luck in your future journey!",

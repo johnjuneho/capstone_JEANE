@@ -8,6 +8,7 @@ const image7 = require('../images/img40.jpg');
 const image8 = require('../images/img52.jpg');
 const image9 = require('../images/img39.jpg');
 const image10 = require('../images/img33.jpg');
+const image11 = require('../images/l1-end.jpg');
 
 export const L1Content = {
   content: [
@@ -313,7 +314,7 @@ export const L1Content = {
     {
       type: 'end',
       endTitle: 'Lesson 1: Mastering Prompt Engineering Closing Thoughts',
-      endImage: image2,
+      endImage: image11,
       endAlt: 'a dragon image',
       endText:
         'Prompt engineering helps you harness the power of AI language models like ChatGPT. By mastering the art of crafting prompts, you can unlock the full potential of these tools for whatever you need. Remember, clarity and specificity are key to getting the results you need. Happy prompting!',

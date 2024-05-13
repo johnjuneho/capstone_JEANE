@@ -8,6 +8,7 @@ const image2 = require('../images/img54.jpg');
 const image3 = require('../images/img28.jpg');
 const image4 = require('../images/img35.jpg');
 const image5 = require('../images/img2.jpg');
+const image6 = require('../images/intro-end.jpg');
 
 export const IntroContent = {
   content: [
@@ -49,7 +50,7 @@ export const IntroContent = {
     {
       type: 'end',
       title: 'Introduction: Closing Thoughts',
-      image: image3,
+      image: image6,
       alt: 'a dragon image',
       text: "You now have the knowledge to embark on your AI journey! We have learned about the history of artificial intelligence. We have also learned that ChatGPT creates responses by predicting what words should go together. Next, we will gather tools and tricks to improve our AI skills. How should we talk to AI? What should we do with it's responses? Can we trust ChatGPT? Let's find out!",
     },

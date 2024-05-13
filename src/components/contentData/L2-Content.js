@@ -10,6 +10,7 @@ const image4 = require('../images/img27.jpg');
 const image5 = require('../images/img30.jpg');
 const image6 = require('../images/img25.jpg');
 const image7 = require('../images/img49.jpg');
+const image8 = require('../images/l2-end.jpg');
 
 export const L2Content = {
   content: [
@@ -276,7 +277,7 @@ export const L2Content = {
     {
       type: 'end',
       endTitle: "Lesson 2:  What Do We Do With AI's Response Closing Thoughts",
-      endImage: image1,
+      endImage: image8,
       endAlt: 'a dragon image',
       endText:
         "Using ChatGPT can be a valuable tool for learning new ideas. However, it's important to use it responsibly and ethically. Remember to fact-check information from reliable sources and avoid plagiarism by putting responses into your own words. By doing so, you'll increase your understanding and critical thinking skills.",
