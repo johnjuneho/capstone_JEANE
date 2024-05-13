@@ -312,8 +312,10 @@ export const L1Content = {
     },
     {
       type: 'end',
-      lessonTitle: 'Lesson 1: Mastering Prompt Engineering Closing Thoughts',
-      message:
+      endTitle: 'Lesson 1: Mastering Prompt Engineering Closing Thoughts',
+      endImage: image2,
+      endAlt: 'a dragon image',
+      endText:
         'Prompt engineering helps you harness the power of AI language models like ChatGPT. By mastering the art of crafting prompts, you can unlock the full potential of these tools for whatever you need. Remember, clarity and specificity are key to getting the results you need. Happy prompting!',
     },
   ],

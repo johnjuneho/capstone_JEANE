@@ -48,9 +48,10 @@ export const IntroContent = {
     },
     {
       type: 'end',
-      lessonTitle: 'Introduction: Closing Thoughts',
-      message:
-        "You now have the knowledge to embark on your AI journey! We have learned about the history of artificial intelligence. We have also learned that ChatGPT creates responses by predicting what words should go together. Next, we will gather tools and tricks to improve our AI skills. How should we talk to AI? What should we do with it's responses? Can we trust ChatGPT? Let's find out!",
+      title: 'Introduction: Closing Thoughts',
+      image: image3,
+      alt: 'a dragon image',
+      text: "You now have the knowledge to embark on your AI journey! We have learned about the history of artificial intelligence. We have also learned that ChatGPT creates responses by predicting what words should go together. Next, we will gather tools and tricks to improve our AI skills. How should we talk to AI? What should we do with it's responses? Can we trust ChatGPT? Let's find out!",
     },
   ],
 };

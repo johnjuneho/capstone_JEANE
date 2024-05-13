@@ -1,25 +1,19 @@
-import React from 'react';
+import { React } from 'react';
 import './style.css';
 
-export default function ExplainPopup({ message, lessonTitle }) {
+export default function TextContent({ cardContent }) {
+  const { endTitle, endImage, endAlt, endText } = cardContent;
+
   return (
-    <div className="modal-container">
-      <div className="speech-bubble">
-        <img
-          className="bubble"
-          src={require('../../../images/speechbubble.png')}
-          alt="speech bubble"
-        />
-        <div className="end-message">
-          <h2>{lessonTitle}</h2>
-          <p className="explanation2">{message}</p>
+    <section className="lesson-container">
+      <img src={endImage} alt={endAlt} className="content-img" />
+      <article className="lesson-heading">
+        <h2>{endTitle}</h2>
+        <div className="lesson-text-container">
+          <p className="lesson-text">{endText}</p>
         </div>
-      </div>
-      <img
-        className="dragon"
-        src={require('../../../images/dragon.png')}
-        alt="cartoon dragon"
-      />
-    </div>
+      </article>
+      <div className="divider"></div>
+    </section>
   );
 }

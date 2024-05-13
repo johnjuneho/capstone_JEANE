@@ -333,13 +333,14 @@ export const L3Content = {
       title: 'Lesson 3: Ethics of AI Closing Thoughts',
       image: image1,
       alt: '',
-      text:
-        "Understanding how ChatGPT and AI work is like having a flashlight in the dark. It helps us find our way through lots of information and avoid believing things that aren't true. But we also need to think about how we use AI ethically. That means not relying too much on it, knowing its limits, and being honest when we use it. We should use AI to get ideas but not copy everything it says. Too much AI can make us lazy thinkers, so it's important to balance how much we use it. By being careful with AI, we can make sure we're not spreading false information or treating people unfairly.",
+      text: "Understanding how ChatGPT and AI work is like having a flashlight in the dark. It helps us find our way through lots of information and avoid believing things that aren't true. But we also need to think about how we use AI ethically. That means not relying too much on it, knowing its limits, and being honest when we use it. We should use AI to get ideas but not copy everything it says. Too much AI can make us lazy thinkers, so it's important to balance how much we use it. By being careful with AI, we can make sure we're not spreading false information or treating people unfairly.",
     },
     {
       type: 'end',
-      lessonTitle: 'Lesson 3: Ethics of AI Closing Thoughts',
-      message:
+      endTitle: 'Lesson 3: Ethics of AI Closing Thoughts',
+      endImage: image1,
+      endAlt: '',
+      endText:
         "Congratulations on completing the curriculum! Throughout this journey, you've flown through the depths of artificial intelligence, mastered the art of engaging with it, and explored the ethics of ChatGPT. With a wealth of knowledge under your belt, you're now equipped to embark on your own academic adventures, ready to conquer new challenges that lie ahead. Wishing you the best of luck in your future journey!",
     },
   ],

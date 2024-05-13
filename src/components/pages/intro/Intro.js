@@ -53,10 +53,9 @@ export default function Intro() {
       />
     );
   } else if (contentType === 'end') {
-    const { lessonTitle, message } = content[currSlide];
-    contentComponent = (
-      <EndScreen lessonTitle={lessonTitle} message={message} />
-    );
+    const { type, title, image, alt, text } = content[currSlide];
+    cardContent = { type, title, image, alt, text };
+    contentComponent = <EndScreen cardContent={cardContent} />;
   }
 
   return (
