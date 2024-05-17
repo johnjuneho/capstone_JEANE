@@ -299,7 +299,7 @@ export const L3Content = {
             "Almost there! Verifying ChatGPT's responses with other sources and integrating them into your own words is definitely a good idea, but what else could be important?",
         },
         {
-          name: 'Correct: All of the above',
+          name: 'All of the above',
           explanation:
             'ChatGPT is a tool to spark ideas and help understand things better. But like using any tool, from pencils to computers, the real learning happens when we make the ideas our own.',
         },
